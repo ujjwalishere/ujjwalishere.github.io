@@ -87,15 +87,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: "I am Ujjwal, currently an undergraduate student at Azim Premji University Bengaluru majoring in Environmental Science and Sustainability.\n
-    \n
-I can not say I am something or the other because I feel like I am not good at anything. Sometimes I code, write poetry, play volleyball, click some beautiful pictures, or just explore some random topics like Matrioshka brain or Ligo. 
-I like opening things up and looking up what is inside them or repairing broken or old things. Yes! I break them sometimes but sometimes I can make some discarded stuff work.\n
-I thrive on exploring real-world challenges and solving them through things I learn in the classroom. 
-I try to learn new things and explore the world without the presumption of achieving something from that knowledge. I think this is what makes me human.\n 
-\n
-
-I hope this place will give you a little peek into my world and hopefully, you will learn more about some interesting stuff."
+    Content: "I am Ujjwal, currently an undergraduate student at Azim Premji University Bengaluru majoring in Environmental Science and Sustainability.\n\nI enjoy exploring and learning without defining myself by any single label. Whether coding, writing poetry, playing volleyball, or repairing old things, I embrace curiosity and discovery.Tackling real-world challenges with classroom insights excites me, and I believe learning for its own sake is what makes us human.\n\nI hope this space gives you a glimpse into my world and sparks your curiosity."
 
 
   socialIcons:
