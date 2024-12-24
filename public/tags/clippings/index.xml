@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Clippings on ExampleSite</title>
+    <link>http://localhost:1313/tags/clippings/</link>
+    <description>Recent content in Clippings on ExampleSite</description>
+    <image>
+      <title>ExampleSite</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.139.4</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/clippings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>End-to-End Google Earth Engine (Full Course)</title>
+      <link>http://localhost:1313/blog/end-to-end-google-earth-engine-full-course/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/end-to-end-google-earth-engine-full-course/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#sign-up-for-google-earth-engine&#34;&gt;Sign-up for Google Earth Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#complete-the-class-pre-work&#34;&gt;Complete the Class Pre-Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#get-the-course-videos&#34;&gt;Get the Course Videos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#youtube&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#vimeo&#34;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#get-the-course-materials&#34;&gt;Get the Course Materials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-1-earth-engine-basics&#34;&gt;Module 1: Earth Engine Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#hello-world&#34;&gt;01. Hello World&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#saving-your-work&#34;&gt;Saving Your Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#working-with-image-collections&#34;&gt;02. Working with Image Collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#exercise-1&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#filtering-image-collections&#34;&gt;03. Filtering Image Collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-2&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#creating-mosaics-and-composites-from-imagecollections&#34;&gt;04. Creating Mosaics and Composites from ImageCollections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-3&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#working-with-feature-collections&#34;&gt;05. Working with Feature Collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-4&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#importing-data&#34;&gt;06. Importing Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-5&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#clipping-images&#34;&gt;07. Clipping Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-6&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exporting-data&#34;&gt;08. Exporting Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-7&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#assignment-1&#34;&gt;Assignment 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-2-earth-engine-intermediate&#34;&gt;Module 2: Earth Engine Intermediate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#earth-engine-objects&#34;&gt;01. Earth Engine Objects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-8&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#calculating-indices&#34;&gt;02. Calculating Indices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-9&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#computation-on-imagecollections&#34;&gt;03. Computation on ImageCollections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-10&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#cloud-masking&#34;&gt;04. Cloud Masking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-11&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#reducers&#34;&gt;05. Reducers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-12&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#time-series-charts&#34;&gt;06. Time-Series Charts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-13&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#assignment-2&#34;&gt;Assignment 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-3-supervised-classification&#34;&gt;Module 3: Supervised Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#introduction-to-machine-learning-and-supervised-classification&#34;&gt;Introduction to Machine Learning and Supervised Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#basic-supervised-classification&#34;&gt;01. Basic Supervised Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-14&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#accuracy-assessment&#34;&gt;02. Accuracy Assessment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-15&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#improving-the-classification&#34;&gt;03. Improving the Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-16&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exporting-classification-results&#34;&gt;04. Exporting Classification Results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-17&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#calculating-area&#34;&gt;05. Calculating Area&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-18&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#assignment-3&#34;&gt;Assignment 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-4-change-detection&#34;&gt;Module 4: Change Detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#introduction-to-change-detection&#34;&gt;Introduction to Change Detection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#spectral-index-change&#34;&gt;01. Spectral Index Change&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-19&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#spectral-distance-change&#34;&gt;02. Spectral Distance Change&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-20&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#direct-classification-of-change&#34;&gt;03. Direct Classification of Change&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-21&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#post-classification-comparison&#34;&gt;04. Post-classification Comparison&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-22&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-5-earth-engine-apps&#34;&gt;Module 5: Earth Engine Apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#client-vs.-server&#34;&gt;01. Client vs. Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-23&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#using-ui-elements&#34;&gt;02. Using UI Elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-24&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#building-and-publishing-an-app&#34;&gt;03. Building and Publishing an App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-25&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#publishing-the-app&#34;&gt;04. Publishing the App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-26&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#create-a-split-panel-app&#34;&gt;05. Create a Split Panel App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-27&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#module-6-google-earth-engine-python-api&#34;&gt;Module 6: Google Earth Engine Python API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#introduction-to-the-python-api&#34;&gt;Introduction to the Python API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#google-colab&#34;&gt;Google Colab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#local-development-environment&#34;&gt;Local Development Environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#python-api-syntax&#34;&gt;01. Python API Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-28&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#automatic-conversion-of-javascript-code-to-python&#34;&gt;02. Automatic Conversion of Javascript Code to Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-29&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#batch-exports&#34;&gt;03. Batch Exports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-30&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#using-earth-engine-with-xarray&#34;&gt;04. Using Earth Engine with XArray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#exercise-31&#34;&gt;Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#automating-downloads&#34;&gt;05. Automating Downloads&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#automating-exports&#34;&gt;06. Automating Exports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#using-the-google-earth-engine-qgis-plugin&#34;&gt;07. Using the Google Earth Engine QGIS Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#supplement&#34;&gt;Supplement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#guided-projects&#34;&gt;Guided Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#get-the-code&#34;&gt;Get the Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#project-1-calculating-rainfall-deviation&#34;&gt;Project 1: Calculating Rainfall Deviation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#project-2-flood-mapping&#34;&gt;Project 2: Flood Mapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#project-3-extracting-time-series&#34;&gt;Project 3: Extracting Time-Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#project-4-landcover-analysis&#34;&gt;Project 4: LandCover Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#project-5-extracting-nighttime-lights-statistics&#34;&gt;Project 5: Extracting Nighttime Lights Statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#learning-resources&#34;&gt;Learning Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#useful-public-repositories&#34;&gt;Useful Public Repositories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#debugging-errors-and-scaling-your-analysis&#34;&gt;Debugging Errors and Scaling Your Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#data-credits&#34;&gt;Data Credits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#composites&#34;&gt;Composites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#supervised-classification&#34;&gt;Supervised Classification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.spatialthoughts.com/#citing-and-referencing&#34;&gt;Citing and Referencing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://courses.spatialthoughts.com/images/spatial_thoughts_logo.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
