@@ -1,12 +1,10 @@
 ---
 title: Kurt Vonnegut on absurdity of war
 date: 2024-12-24
-description: I recently happen to read one of the masterpeiece written by Kurt Vonnegut --Slaughterhouse five or the children's crusade--. It is more than a fictional book and has very deep meanings and lessons for the real worl. I have to say that this book is very Vonnegut.
+description: I recently happen to read one of the masterpeiece written by Kurt Vonnegut --Slaughterhouse five or the children's crusade--. It is more than a fictional book and carry very deep meanings and lessons for the real world. I have to say that this book is very Vonnegut.
 draft: false
 tags:
   - Book
-  - Review
-  - fiction
 ---
 
 ![Image](/kurt.jpg)
