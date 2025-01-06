@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poetry on Ujjwal Nagar</title>
-    <link>//localhost:1313/tags/poetry/</link>
+    <link>/tags/poetry/</link>
     <description>Recent content in Poetry on Ujjwal Nagar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Ujjwal</copyright>
-    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>किताबें - गुलज़ार</title>
+      <link>/posts/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/posts/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;I have been reading a book &amp;ldquo;Selected Poems by Gulzar&amp;rdquo; edited by Pavan K.Verma, check it out if you like hindi poetry. Sharing one of the masterpiece by gulzar here.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;किताबें झाँकती हैं बंद आलमारी के शीशों से,&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;बड़ी हसरत से तकती हैं.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;महीनों अब मुलाकातें नहीं होतीं,&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;जो शामें इन की सोहबत में कटा करती थीं.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;अब अक्सर &amp;hellip;&amp;hellip;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;गुज़र जाती हैं &amp;lsquo;कम्प्यूटर&amp;rsquo; के पदों पर.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;बड़ी बेचैन रहती हैं किताबें &amp;hellip;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>In Flanders Fields by John McCrae</title>
-      <link>//localhost:1313/posts/in-flanders-fields-by-john-mccrae/</link>
+      <link>/posts/flanders_fields_poetry/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/in-flanders-fields-by-john-mccrae/</guid>
+      <guid>/posts/flanders_fields_poetry/</guid>
       <description>&lt;p&gt;&lt;em&gt;In Flanders fields the poppies blow&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Between the crosses, row on row,&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;That mark our place; and in the sky&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;The larks, still bravely singing, fly&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Scarce heard amid the guns below.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;We are the Dead. Short days ago&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;We lived, felt dawn, saw sunset glow,&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Loved and were loved, and now we lie,&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;In Flanders fields.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Take up our quarrel with the foe:&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;To you from failing hands we throw&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;The torch; be yours to hold it high.&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;If ye break faith with us who die&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;We shall not sleep, though poppies grow&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;In Flanders fields.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
