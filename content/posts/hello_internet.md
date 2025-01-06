@@ -6,7 +6,7 @@ draft: false
 tags:
   - Opinion
 ---
-![flower](flower.jpg)
+![flower](/flower.jpg)
 
 I was thinking about it for quite a while and today I have decided to give it a try. Recently I've been having a lot of conversation with one of my good friend Rishabh and he is the one to give me the final nudge.
 
