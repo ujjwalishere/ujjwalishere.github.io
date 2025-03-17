@@ -131,10 +131,4 @@ weight = 4
       unsafe = true
       xhtml = false
 
-[outputs]
-  home = ['html', 'rss']
-  section = ['html', 'rss']
-  posts = ['html', 'rss']
-  taxonomy = ['html']
-  term = ['html']
 
