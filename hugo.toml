@@ -1,5 +1,12 @@
 baseURL = ""
 languageCode = "en-us"
+
+copyright = "2025 Ujjwal Nagar All rights reserved"
+[Author]
+    name = "Ujjwal Nagar"
+    email = "ujjwalnagar@hotmail.com"
+
+languageCode = "en-us"
 title = "Ujjwal Nagar"
 description = "The Blog, project's and everything about Ujjwal Nagar"
 
@@ -123,3 +130,11 @@ weight = 4
       hardWraps = false
       unsafe = true
       xhtml = false
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  posts = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+

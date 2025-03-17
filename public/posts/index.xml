@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ujjwal Nagar</title>
+    <title>Posts on </title>
     <link>/posts/</link>
-    <description>Recent content in Posts on Ujjwal Nagar</description>
+    <description>Recent content in Posts on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Ujjwal</copyright>
+    <copyright>2025 Ujjwal Nagar All rights reserved</copyright>
     <lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -35,7 +35,7 @@
       <link>/posts/hello_internet/</link>
       <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
       <guid>/posts/hello_internet/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;flower.jpg&#34; alt=&#34;flower&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I was thinking about it for quite a while and today I have decided to give it a try. Recently I&amp;rsquo;ve been having a lot of conversation with one of my good friend Rishabh and he is the one to give me the final nudge.&lt;/p&gt;&#xA;&lt;p&gt;Yes! I am starting to write on the internet, you may call it a blog or whatever but for me it&amp;rsquo;s just a way to share ideas. This happened after a lot of debate with Rishabh, and I finally do agree that it is necessary to share ideas as he put it as emitting signals in the world of noise. I am more of a listening person and most of the time I do not have much to say. Problem is people talk a lot, and you need to be very careful to not miss the real part from all the noise. In midst of all of that, there is always very little time to say and even if you do want to say hardly anyone wants to listen.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;/flower.jpg&#34; alt=&#34;flower&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I was thinking about it for quite a while and today I have decided to give it a try. Recently I&amp;rsquo;ve been having a lot of conversation with one of my good friend Rishabh and he is the one to give me the final nudge.&lt;/p&gt;&#xA;&lt;p&gt;Yes! I am starting to write on the internet, you may call it a blog or whatever but for me it&amp;rsquo;s just a way to share ideas. This happened after a lot of debate with Rishabh, and I finally do agree that it is necessary to share ideas as he put it as emitting signals in the world of noise. I am more of a listening person and most of the time I do not have much to say. Problem is people talk a lot, and you need to be very careful to not miss the real part from all the noise. In midst of all of that, there is always very little time to say and even if you do want to say hardly anyone wants to listen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
