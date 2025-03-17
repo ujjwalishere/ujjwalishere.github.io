@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ujjwal Nagar</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Ujjwal Nagar</description>
+    <title>Tags on </title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Ujjwal</copyright>
+    <copyright>2025 Ujjwal Nagar All rights reserved</copyright>
     <lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry</title>
-      <link>/tags/poetry/</link>
+      <link>http://localhost:1313/tags/poetry/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/poetry/</guid>
+      <guid>http://localhost:1313/tags/poetry/</guid>
       <description></description>
     </item>
     <item>
       <title>Book</title>
-      <link>/tags/book/</link>
+      <link>http://localhost:1313/tags/book/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/book/</guid>
+      <guid>http://localhost:1313/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Opinion</title>
-      <link>/tags/opinion/</link>
+      <link>http://localhost:1313/tags/opinion/</link>
       <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/opinion/</guid>
+      <guid>http://localhost:1313/tags/opinion/</guid>
       <description></description>
     </item>
   </channel>
