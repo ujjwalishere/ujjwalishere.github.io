@@ -55,12 +55,17 @@ weight = 2
 [[menu.main]]
 name = "About Me"
 url = "/about"
-weight = 5
+weight = 3
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[[menu.main]]
+name = "RSS"
+url = "/index.xml"
+weight = 5
 
 
 
@@ -125,4 +130,6 @@ weight = 4
       unsafe = true
       xhtml = false
 
-
+[services]
+  [services.rss]
+    limit = -1
