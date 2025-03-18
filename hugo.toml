@@ -21,6 +21,8 @@ pygmentscodefencesguesssyntax = true
 	subtitle =  "Hi there! I am Ujjwal. I warmly welcome you to my little Igloo on the internet."
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
+  ShowFullTextinRSS = true
+  
 
 # Social Tags
 

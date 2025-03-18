@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opinion on Ujjwal Nagar</title>
-    <link>http://localhost:1313/tags/opinion/</link>
+    <link>https://ujjwalishere.github.io/tags/opinion/</link>
     <description>Recent content in Opinion on Ujjwal Nagar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Ujjwal</copyright>
     <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ujjwalishere.github.io/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, Internet</title>
-      <link>http://localhost:1313/posts/hello_internet/</link>
+      <link>https://ujjwalishere.github.io/posts/hello_internet/</link>
       <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello_internet/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/flower.jpg&#34; alt=&#34;flower&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I was thinking about it for quite a while and today I have decided to give it a try. Recently I&amp;rsquo;ve been having a lot of conversation with one of my good friend Rishabh and he is the one to give me the final nudge.&lt;/p&gt;&#xA;&lt;p&gt;Yes! I am starting to write on the internet, you may call it a blog or whatever but for me it&amp;rsquo;s just a way to share ideas. This happened after a lot of debate with Rishabh, and I finally do agree that it is necessary to share ideas as he put it as emitting signals in the world of noise. I am more of a listening person and most of the time I do not have much to say. Problem is people talk a lot, and you need to be very careful to not miss the real part from all the noise. In midst of all of that, there is always very little time to say and even if you do want to say hardly anyone wants to listen.&lt;/p&gt;&#xA;&lt;p&gt;Another problem is about opinions, we all have our own opinions, and every opinion matters even if you don&amp;rsquo;t agree with it but sometimes they are not welcomed. Here from time to time I will be sharing my opinions and thoughts on things, you do not have to necessarily agree with me, sometimes even I do not agree with my own. Although I will try my best but if my opinions do hurt anyone and are not at all acceptable, do point it out on my e-mail. Right now, I do not have any preplanned ideas what I am going to do here, you can take this as a place where I share. I am sure you will something worth reading here and hopefully It will contribute into something good.&lt;/p&gt;&#xA;&lt;p&gt;Looking forward to 2025 and hope it will bring good days and joy.&lt;/p&gt;&#xA;</description>
+      <guid>https://ujjwalishere.github.io/posts/hello_internet/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ujjwalishere.github.io/images/flower.jpg&#34; alt=&#34;flower&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I was thinking about it for quite a while and today I have decided to give it a try. Recently I&amp;rsquo;ve been having a lot of conversation with one of my good friend Rishabh and he is the one to give me the final nudge.&lt;/p&gt;&#xA;&lt;p&gt;Yes! I am starting to write on the internet, you may call it a blog or whatever but for me it&amp;rsquo;s just a way to share ideas. This happened after a lot of debate with Rishabh, and I finally do agree that it is necessary to share ideas as he put it as emitting signals in the world of noise. I am more of a listening person and most of the time I do not have much to say. Problem is people talk a lot, and you need to be very careful to not miss the real part from all the noise. In midst of all of that, there is always very little time to say and even if you do want to say hardly anyone wants to listen.&lt;/p&gt;&#xA;&lt;p&gt;Another problem is about opinions, we all have our own opinions, and every opinion matters even if you don&amp;rsquo;t agree with it but sometimes they are not welcomed. Here from time to time I will be sharing my opinions and thoughts on things, you do not have to necessarily agree with me, sometimes even I do not agree with my own. Although I will try my best but if my opinions do hurt anyone and are not at all acceptable, do point it out on my e-mail. Right now, I do not have any preplanned ideas what I am going to do here, you can take this as a place where I share. I am sure you will something worth reading here and hopefully It will contribute into something good.&lt;/p&gt;&#xA;&lt;p&gt;Looking forward to 2025 and hope it will bring good days and joy.&lt;/p&gt;&#xA;</description>
     </item>
   </channel>
 </rss>
