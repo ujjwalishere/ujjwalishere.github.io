@@ -7,7 +7,8 @@ author = "Hugo Authors"
 +++
 ![My Image](/images/ujjwal.jpeg)
 
-I am Ujjwal, currently an undergraduate student at Azim Premji University Bengaluru majoring in Environmental Science and Sustainability. 
+I am Ujjwal, currently an undergraduate student at Azim Premji University, Bengaluru; Majoring in Environmental Science and Sustainability. 
+
 I can not say I am something or the other because I feel like i am not good at anything. Sometimes I code, write poetry, play volleyball, click some beautiful pictures, just explore some random topic like "Matrioshka brain or Ligo". I like opening things up and looking up what inside them or repairing broken old things. 
 
 I thrive on exploring real world challenges and solving them by things I learn in classroom. I try to learn new things and explore world without the presumption of achieving something from that knowledge. I think this is what me makes me human. 
@@ -17,7 +18,7 @@ I hope this place will give you a little peek into my world and hopefully you wi
 
 
 If you have any question or anything, just drop me an e-mail.
- : **ujjwalnagar{@}hotmail{.}com**
+ : **[contact@ujjwalnagar.com](mailto:contact@ujjwalnagar.com)**
 
 
 * [Instagram](https://www.instagram.com/ujjwalnagar08/)
