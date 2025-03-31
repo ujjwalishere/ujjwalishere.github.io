@@ -2,48 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.ujjwalnagar.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/i-got-my-own-domain/</loc>
+    <loc>http://localhost:1313/posts/i-got-my-own-domain/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/tags/opinion/</loc>
+    <loc>http://localhost:1313/tags/opinion/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/tags/tech/</loc>
+    <loc>http://localhost:1313/tags/tech/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/tags/poetry/</loc>
+    <loc>http://localhost:1313/tags/poetry/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</loc>
+    <loc>http://localhost:1313/posts/%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/flanders_fields_poetry/</loc>
+    <loc>http://localhost:1313/posts/flanders_fields_poetry/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/tags/book/</loc>
+    <loc>http://localhost:1313/tags/book/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/slaughterhouse_five_bookreview/</loc>
+    <loc>http://localhost:1313/posts/slaughterhouse_five_bookreview/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/posts/hello_internet/</loc>
+    <loc>http://localhost:1313/posts/hello_internet/</loc>
     <lastmod>2024-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ujjwalnagar.com/categories/</loc>
+    <loc>http://localhost:1313/posts/starting-monthly-tape-mix/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
