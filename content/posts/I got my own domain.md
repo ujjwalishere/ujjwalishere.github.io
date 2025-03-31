@@ -1,0 +1,38 @@
+---
+title: I've finally got my own domain
+date: 2025-03-31
+description: I've got my own domain now and this was my daunting journey to get one.
+draft: false
+tags:
+  - Opinion
+  - tech
+---
+Well, I was not particularly obsessed with my name, it’s just that I was curious about finding out how domain works. I have seen a lot of people doing their own thing on their website and I liked that idea. Your domain and website are something you own. I want to own my presence on the internet and here we are – 
+
+[www.ujjwalnagar.com](https://www.ujjwalnagar.com)
+
+When I started, I thought it will be an easy task to buy a domain; Trust me it turned out to be more daunting than I thought. It took me almost two weeks, just to buy a domain. There are a ton of companies, we all have seen their constant stream of ads on YouTube
+, websites etc. but if you start to investigate what they offer, you’ll get to know how murky this domain market is. You will find a lot of companies offering free domain, but when you see the checkout page, it says that you must buy for 3 years and the first year is free, scam it is “no?”.
+
+Yearly price and renewal price are the first thing to look for, how much is their renewal price? And if there are conditions for it. Some of them don’t even let you buy a single year plan, most of the time it is bundled with hosting plans.
+
+Privacy is another thing to look for. Most of the registrars don’t even provide Whois redaction and privacy and these are two different things. If you don’t know, whois is basically a public directory which stores all the information related to domain.
+
+One of my friend recently bought a domain, I was curious, so I just did a whois lookup on his domain. All his personal information including his Name, Mobile number, Email address and his Address are publicly visible to anyone. I texted him about this, but he texted me back saying that he can’t remove it because that is a paid service, and he has to pay for it. This is common across most of the registrars, they will not tell you until you buy the domain and then you realize.
+
+This is the same with SSL certificates. Most of these famous registrars sell SSL certificates as add on which can cost half the price of your domain itself. Same problem with this also, you will not realize until you buy the domain. Sometimes they will say free SSL buy there is always a little * attached to it. If you are asking yourself, why do I need a SSL certificate, I’ll explain it to you simply. Have you seen that screen in your browser when you are trying to load a website, and your browser warns you with scary screen that an attacker might hack your information.
+
+![Error Image](/images/attacker.png)
+
+
+That happens because your site does not have an SSL certificate, and browsers can’t verify if it is a legit website or some spam. This again costs money, yes there are some sites that provide free SSL, but they don’t work. Most of these issues are with those registrars that spend so much on ads.
+
+The first thing I did was to do Whois lookup on famous sites, which registrar they are using, then I did a lot of research on registrars on what they are offering, read a lot of reviews on reddit about different registrars. All this research led to Cloudflare; I was really surprised to know that you can buy domain from Cloudflare. I have used Cloudflare only for their DNS, but most people will remember Cloudflare for their “I am not robot” or website security verification banner that comes before you load a website. I found Cloudflare good, their documentation and everything was very clear and there was no colorful message to deceive you. Most of the domain costs around $10.5 which is cheap when you compare to other registrars and renewal is also constant for every successive year. Apart from this they also give you SSL and privacy redaction.
+
+All this seemed good but when I tried to purchase, I ran into payment issues. First it does not support Rupay card, only international cards are supported and PayPal. I’ve tried 4-5 credit, debit card everything nothing worked. I’ve raised a ticket no one replied. I asked in their community forum and on Discord server, one person replied but that was not helpful at all and then everyone stopped replying. After trying for 1 week every day, I decided to move on from Cloudflare. Later they emailed me all these issues are because of new RBI policies.
+
+Then I moved to Porkbun, they are the only second registrar I found that provides SSL and privacy. I tried to register through Porkbun but that also failed. So, they have this thing where you must scan your ID and take a selfie to get verified, it is all automated. It got rejected. I asked their support team they sent me another link to verify; again failed. I was really frustrated and at this point I wanted to drop my plan. This last time I wrote to them and Walla, they just directly approved my Id. After that it only took max 15 mins to purchase my domain. They use Stripe as their payment processor which works well and the funny part is Porkbun itself uses Cloudflare DNS. You also get email forwarding for your domain. So, my new email address will be: 
+
+[contact@ujjwalnagar.com](mailto:contact@ujjwalnagar.com)
+
+I’ll later talk about how I point it to my website, how I am hosting it, CNAME records etc.

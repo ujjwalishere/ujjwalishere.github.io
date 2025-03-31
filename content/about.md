@@ -5,6 +5,7 @@ date = "2024-11-26"
 aliases = ["about-me","contact"]
 author = "Hugo Authors"
 +++
+![My Image](/images/ujjwal.jpeg)
 
 I am Ujjwal, currently an undergraduate student at Azim Premji University Bengaluru majoring in Environmental Science and Sustainability. 
 I can not say I am something or the other because I feel like i am not good at anything. Sometimes I code, write poetry, play volleyball, click some beautiful pictures, just explore some random topic like "Matrioshka brain or Ligo". I like opening things up and looking up what inside them or repairing broken old things. 
