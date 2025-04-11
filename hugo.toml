@@ -1,6 +1,5 @@
 baseURL = "https://www.ujjwalnagar.com"
 languageCode = "en-us"
-
 title = "Ujjwal Nagar"
 description = "The Blog, project's and everything about Ujjwal Nagar"
 theme="archie"
@@ -22,8 +21,13 @@ pygmentscodefencesguesssyntax = true
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
   ShowFullTextinRSS = true
-  favicon = "/favicon.png"
-  
+  favicon = "/favicon.svg"
+
+[sitemap]
+  changeFreq = 'weekly'
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
   
 
 # Social Tags

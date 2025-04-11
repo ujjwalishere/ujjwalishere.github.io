@@ -28,7 +28,5 @@ If you have any question or anything, just drop me an e-mail.
 * [Linkedin](https://www.linkedin.com/in/ujjwal-nagar-india/)
 * [Bluesky](https://bsky.app/profile/ujjwalnagar.bsky.social)
 
-
-
-
+I use Hugo for this website. It is built on archie which is a fork of Ezhil's theme built by [Athul](https://github.com/athul/archie) licensed under MIT License. All the credits go to him, I have customized it a bit to suit my needs.
 
