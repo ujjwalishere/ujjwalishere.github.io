@@ -24,14 +24,14 @@ I found this channel called *Ujala Radio* which is an Amsterdam, and I am addict
 
 Here are some of the channels I am listening to these days:
 
-[Ujala Radio](https://radio.garden/listen/ujala/sCFHyXDN )                       *Amsterdam, Netherlands*
+[Ujala Radio](https://radio.garden/listen/ujala/sCFHyXDN )         *Amsterdam, Netherlands*
 
-[Radio SBS](https://radio.garden/listen/radio-sbs/HASfWUI8)                      *Utrecht, Netherlands*
+[Radio SBS](https://radio.garden/listen/radio-sbs/HASfWUI8)           *Utrecht, Netherlands*
 
 [Sangeet Radio]( https://radio.garden/listen/sangeet-radio-fm-95-1/3UYywf2B )    *Houston, US*
 
 [Radio Zindagi](https://radio.garden/listen/radio-zindagi-am-540/zDDJjS8Z  )     *Edison, US*
 
-[Radio Privet](https://radio.garden/listen/radio-privet/AAtNsdFf )               *Nytva, Russia*
+[Radio Privet](https://radio.garden/listen/radio-privet/AAtNsdFf )        *Nytva, Russia*
 
 It is not just *RadioGarden*; I am also playing with the local radio on my smartphone, but you need more patience for that because you can’t be moving around.
