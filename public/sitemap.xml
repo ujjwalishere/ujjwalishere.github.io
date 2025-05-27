@@ -2,79 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/opinion/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/09--why-looking-at-stars-made-earth-more-important/</loc>
+    <lastmod>2025-05-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/08-monthly-tape-mix---april-25/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/08-monthly-tape-mix---april-25/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/monthlytapemix/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/monthlytapemix/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/07-my-radio-memories/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/07-my-radio-memories/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/opinion/</loc>
-    <lastmod>2025-04-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/06-i-got-my-own-domain/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/06-i-got-my-own-domain/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/05-starting-monthly-tape-mix/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/05-starting-monthly-tape-mix/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/tech/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/tech/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/poetry/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/poetry/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/04-%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/04-%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A4%9C%E0%A4%BC%E0%A4%BE%E0%A4%B0/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/03-flanders_fields_poetry/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/03-flanders_fields_poetry/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/tags/book/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/tags/book/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/02-slaughterhouse_five_bookreview/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/02-slaughterhouse_five_bookreview/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/posts/01-hello_internet/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/posts/01-hello_internet/</loc>
     <lastmod>2024-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/about/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/about/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/archives/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://ujjwalnagar.comhttps://www.ujjwalnagar.com/categories/</loc>
+    <loc>https://ujjwalnagar.comhttp://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

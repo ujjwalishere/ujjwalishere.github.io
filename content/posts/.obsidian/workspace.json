@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08-Monthly Tape Mix - April 25.md",
+                "file": "09- Why looking at stars made Earth more important.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "08-Monthly Tape Mix - April 25"
+              "title": "09- Why looking at stars made Earth more important"
             }
           }
         ]
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08-Monthly Tape Mix - April 25.md",
+                "file": "09- Why looking at stars made Earth more important.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 08-Monthly Tape Mix - April 25"
+              "title": "Backlinks for 09- Why looking at stars made Earth more important"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08-Monthly Tape Mix - April 25.md",
+                "file": "09- Why looking at stars made Earth more important.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 08-Monthly Tape Mix - April 25"
+              "title": "Outgoing links from 09- Why looking at stars made Earth more important"
             }
           },
           {
@@ -142,20 +143,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08-Monthly Tape Mix - April 25.md",
+                "file": "09- Why looking at stars made Earth more important.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08-Monthly Tape Mix - April 25"
+              "title": "Outline of 09- Why looking at stars made Earth more important"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -165,17 +167,22 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false
     }
   },
   "active": "6330b00d3a4784c2",
   "lastOpenFiles": [
+    "~syncthing~09- Why looking at stars made Earth more important.md.tmp",
+    "09- Why looking at stars made Earth more important.md",
+    "earth.md",
+    "08-Monthly Tape Mix - April 25.md",
+    "here.md",
+    "07-My radio memories.md",
     "03-flanders_fields_poetry.md",
     "02-slaughterhouse_five_bookReview.md",
     "01-hello_internet.md",
-    "08-Monthly Tape Mix - April 25.md",
     "05-Starting Monthly Tape Mix.md",
-    "07-My radio memories.md",
     "06-I got my own domain.md",
     "04-गुलज़ार.md"
   ]

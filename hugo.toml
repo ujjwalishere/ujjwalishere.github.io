@@ -141,3 +141,5 @@ weight = 5
 [services]
   [services.rss]
     limit = -1
+
+buildDrafts = false
