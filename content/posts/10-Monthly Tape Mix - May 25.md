@@ -1,7 +1,7 @@
 ---
 title: Monthly Tape Mix - May 2025
 date: 2025-06-04
-description: Monthly Tape Mix - April 2025
+description: Monthly Tape Mix - May 2025
 draft: false
 tags:
   - monthlyTapeMix

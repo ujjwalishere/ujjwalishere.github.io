@@ -1,0 +1,63 @@
+---
+title: Monthly Tape Mix - June 2025
+date: 2025-07-01
+description: Monthly Tape Mix - June 2025
+draft: false
+tags:
+  - monthlyTapeMix
+---
+
+# 1 Nectarine (Raag Bihag) - Shoonyam
+
+{{< youtube FYNJbS99cfc >}}
+
+https://www.youtube.com/watch?v=FYNJbS99cfc
+# 2 Rang - Abi Sampa
+
+{{< youtube YNCQPp0UaHk >}}
+
+https://www.youtube.com/watch?v=YNCQPp0UaHk
+# 3 Bangles - Niraj Chag
+
+{{< youtube VPDSGDgcGpM >}}
+
+https://www.youtube.com/watch?v=VPDSGDgcGpM
+# 4 Papa Mama Loca Pipa- The Minions
+
+{{< youtube x4QmZjQnxQU >}}
+
+https://www.youtube.com/watch?v=x4QmZjQnxQU
+# 5 Wellerman (Sea Shanty) - Nathan Evans
+
+{{< youtube qP-7GNoDJ5c >}}
+
+https://www.youtube.com/watch?v=qP-7GNoDJ5c
+# 6 Will You Love Me Tomorrow - The Shirelles
+
+{{< youtube Y2e8B2CmicQ >}}
+
+https://www.youtube.com/watch?v=Y2e8B2CmicQ
+
+# 7 Untitled - Sergio Díaz De Rojas
+ 
+{{< youtube cc7hgJhlOA4 >}}
+
+https://www.youtube.com/watch?v=cc7hgJhlOA4
+# 8 Bum Bum Bole - Shaan
+
+{{< youtube NJ1NIIdHhXs >}}
+
+https://www.youtube.com/watch?v=NJ1NIIdHhXs
+# 9 Purvayi - Midival Punditz
+
+{{< youtube dipbEodKmbU >}}
+
+https://www.youtube.com/watch?v=dipbEodKmbU
+
+# 10 तू राजा की राजदुलारी - Bansi Jogi
+
+{{< youtube bBPxdL3jWlY >}}
+
+https://www.youtube.com/watch?v=bBPxdL3jWlY
+
+
