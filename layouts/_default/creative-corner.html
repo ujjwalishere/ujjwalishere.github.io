@@ -1,0 +1,187 @@
+{{ define "main" }}
+<main class="creative-corner">
+  <article>
+    <div class="title">
+      <h1 class="title">{{ .Title }}</h1>
+      {{ with .Description }}<div class="meta">{{ . }}</div>{{ end }}
+    </div>
+    <section class="body">
+      {{ .Content }}
+      {{/* Gather images from static/images/creative */}}
+      {{ $creativeDir := "images/creative" }}
+      {{ $images := resources.Match (printf "%s/*" $creativeDir) }}
+      {{ if not $images }}
+        <p>No images yet. Add some to <code>static/{{ $creativeDir }}/</code>.</p>
+      {{ else }}
+        <div class="gallery" id="creativeGallery">
+          {{ range $i, $img := $images }}
+            {{ $resized := $img.Resize "x800" }} {{/* scale longest side to 800, keep orientation */}}
+            {{ $thumb := $img.Resize "300x" }}  {{/* width 300, proportional height */}}
+            <a class="gallery-item" href="{{ $resized.RelPermalink }}" data-full="{{ $resized.RelPermalink }}" title="Creative Image {{ add $i 1 }}">
+              <img src="{{ $thumb.RelPermalink }}" alt="Creative work {{ add $i 1 }}" loading="lazy" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" />
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  </article>
+</main>
+<script>
+// Simple lightbox
+(function(){
+  const g = document.getElementById('creativeGallery');
+  if(!g) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = '<div class="lightbox-content"><button class="nav prev" aria-label="Previous image">&#10094;</button><img/><button class="nav next" aria-label="Next image">&#10095;</button><span class="close" aria-label="Close">×</span></div>';
+  document.body.appendChild(overlay);
+  const imgEl = overlay.querySelector('img');
+  const contentEl = overlay.querySelector('.lightbox-content');
+  const btnPrev = overlay.querySelector('button.prev');
+  const btnNext = overlay.querySelector('button.next');
+  const close = ()=> { overlay.classList.remove('open'); resetZoom(); };
+  overlay.addEventListener('click', e=>{ if(e.target===overlay || e.target.classList.contains('close')) close(); });
+  let galleryItems = [];
+  let currentIndex = -1;
+  function buildGallery(){
+    galleryItems = Array.from(g.querySelectorAll('a.gallery-item'));
+  }
+  function sizeToFit(){
+    // Reset any scaling so natural dimensions known
+    imgEl.style.transform='';
+    const vw = window.innerWidth * 0.9;
+    const vh = window.innerHeight * 0.9;
+    const iw = imgEl.naturalWidth;
+    const ih = imgEl.naturalHeight;
+    let scale = 1;
+    if(iw > vw || ih > vh){
+      scale = Math.min(vw/iw, vh/ih);
+    }
+    imgEl.dataset.baseFitScale = scale;
+    imgEl.style.maxWidth = Math.round(iw*scale) + 'px';
+    imgEl.style.maxHeight = Math.round(ih*scale) + 'px';
+  }
+  function showIndex(idx){
+    if(galleryItems.length===0) return;
+    currentIndex = (idx + galleryItems.length) % galleryItems.length; // wrap
+    const a = galleryItems[currentIndex];
+    imgEl.src = a.dataset.full || a.getAttribute('href');
+    overlay.classList.add('open');
+    resetZoom();
+    // Wait for image load to center & fit
+    imgEl.onload = ()=> { sizeToFit(); };
+  }
+  g.addEventListener('click', e=>{
+    const a = e.target.closest('a.gallery-item');
+    if(!a) return;
+    e.preventDefault();
+    if(galleryItems.length===0) buildGallery();
+    const idx = galleryItems.indexOf(a);
+    showIndex(idx >=0 ? idx : 0);
+  });
+  btnNext.addEventListener('click', e=>{ e.stopPropagation(); showIndex(currentIndex+1); });
+  btnPrev.addEventListener('click', e=>{ e.stopPropagation(); showIndex(currentIndex-1); });
+  document.addEventListener('keyup', e=>{ 
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowRight' && overlay.classList.contains('open')) showIndex(currentIndex+1);
+    else if(e.key==='ArrowLeft' && overlay.classList.contains('open')) showIndex(currentIndex-1);
+  });
+  // Zoom & Pan Logic
+  let isZoomed = false;
+  let isDragging = false;
+  let startX = 0, startY = 0; // pointer position at drag start
+  let dragOriginX = 0, dragOriginY = 0; // translation at drag start
+  let curX = 0, curY = 0; // current translation
+  // inertial variables removed for click-drag only behavior
+  const BASE_ZOOM_SCALE = 1.6; // lowered to reduce overflow
+  function applyTransform(){
+    if(isZoomed){
+      const eff = parseFloat(imgEl.dataset.effectiveScale || BASE_ZOOM_SCALE);
+      imgEl.style.transform = `translate(${curX}px, ${curY}px) scale(${eff})`;
+    } else {
+      imgEl.style.transform = '';
+      imgEl.removeAttribute('data-effective-scale');
+    }
+  }
+  function resetZoom(){
+    isZoomed=false; isDragging=false; curX=0; curY=0; applyTransform(); imgEl.style.cursor='zoom-in';
+  }
+  function clamp(val, min, max){ return Math.min(Math.max(val, min), max); }
+  imgEl.addEventListener('click', e=>{
+    e.stopPropagation();
+    if(!isZoomed){
+      isZoomed = true; imgEl.style.cursor='grab';
+      const baseScale = parseFloat(imgEl.dataset.baseFitScale||'1');
+      // Compute zoom relative to current fitted display: scale >1 means bigger than fitted
+      // To reach original natural size, scale = 1/baseScale. We multiply by BASE_ZOOM_SCALE for extra zoom.
+      let target = (1/baseScale) * BASE_ZOOM_SCALE;
+      const vw = window.innerWidth * 0.9;
+      const vh = window.innerHeight * 0.9;
+      // Ensure zoomed size (natural * baseScale * target) fits viewport boundaries minimally (allow overflow for pan but not extreme)
+      const zoomedW = imgEl.naturalWidth * baseScale * target;
+      const zoomedH = imgEl.naturalHeight * baseScale * target;
+      if(zoomedW > vw*2 || zoomedH > vh*2){
+        const scaleW = (vw*2) / (imgEl.naturalWidth * baseScale);
+        const scaleH = (vh*2) / (imgEl.naturalHeight * baseScale);
+        target = Math.min(target, scaleW, scaleH);
+      }
+      imgEl.dataset.effectiveScale = target;
+      applyTransform();
+    }
+    // if already zoomed, do nothing (no toggle out) – user closes via overlay/close button
+  });
+  const startDrag = (x,y)=>{ 
+    if(!isZoomed) return; 
+    isDragging = true; 
+    startX = x; startY = y; 
+    dragOriginX = curX; dragOriginY = curY; 
+  imgEl.style.cursor='grabbing';
+  };
+  const moveDrag = (x,y)=>{
+    if(!isDragging) return; 
+  const rect = contentEl.getBoundingClientRect();
+  const eff = parseFloat(imgEl.dataset.effectiveScale || BASE_ZOOM_SCALE);
+  const baseScale = parseFloat(imgEl.dataset.baseFitScale||'1');
+  // limit translation based on effective scale
+  const fullW = imgEl.naturalWidth * baseScale * eff;
+  const fullH = imgEl.naturalHeight * baseScale * eff;
+  const maxOffsetX = Math.max(0,(fullW - rect.width)/2); 
+  const maxOffsetY = Math.max(0,(fullH - rect.height)/2);
+  if(maxOffsetX < 2) curX = 0; // prevent subpixel drift
+  if(maxOffsetY < 2) curY = 0;
+    const dx = x - startX; const dy = y - startY;
+    curX = clamp(dragOriginX + dx, -maxOffsetX, maxOffsetX);
+    curY = clamp(dragOriginY + dy, -maxOffsetY, maxOffsetY);
+    applyTransform();
+  };
+  const endDrag = ()=>{ if(isDragging){ isDragging=false; imgEl.style.cursor='grab'; } };
+  // Unified pointer events for click-drag (mouse + touch + pen)
+  contentEl.addEventListener('pointerdown', e=>{
+    if(e.button!==0) return; // only primary button
+    if(!isZoomed) return;
+    if(e.target !== imgEl) return; // only drag when grabbing the image itself
+    e.preventDefault();
+    startDrag(e.clientX, e.clientY);
+    try { contentEl.setPointerCapture(e.pointerId); } catch(_){}
+  });
+  const pointerMoveHandler = e=>{
+    if(!isDragging) return;
+    // If no buttons pressed anymore, terminate drag
+    if(e.buttons === 0){ endDrag(); return; }
+    moveDrag(e.clientX, e.clientY);
+  };
+  contentEl.addEventListener('pointermove', pointerMoveHandler);
+  const pointerEnd = e=>{
+    if(!isDragging) return;
+    endDrag();
+    try { contentEl.releasePointerCapture(e.pointerId); } catch(_){}
+  };
+  contentEl.addEventListener('pointerup', pointerEnd);
+  contentEl.addEventListener('pointercancel', pointerEnd);
+  contentEl.addEventListener('pointerleave', e=>{ if(isDragging) pointerEnd(e); });
+  // Window-level safety listeners
+  window.addEventListener('pointerup', pointerEnd);
+  window.addEventListener('pointermove', pointerMoveHandler);
+})();
+</script>
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "main" }}
+<h1 class="page-title">Reading</h1>
+<p>Tracking what I'm reading, with start/finish dates and ratings.</p>
+<table class="reading-table">
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Author</th>
+      <th>Status</th>
+      <th>Started</th>
+      <th>Finished</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ range sort .Pages.ByTitle }}
+    {{ $r := .Params.rating }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td>{{ with .Params.author }}{{ . }}{{ end }}</td>
+      <td>{{ .Params.status | default (cond (isset .Params "finished") "finished" "reading") }}</td>
+      <td>{{ with .Params.started }}{{ . }}{{ end }}</td>
+      <td>{{ with .Params.finished }}{{ . }}{{ end }}</td>
+      <td>
+        {{ if $r }}
+          {{/* Render simple star bar */}}
+          {{ $full := math.Floor $r }}
+          {{ $half := ge (sub $r $full) 0.5 }}
+          {{ range seq 1 5 }}
+            {{ if le . $full }}★{{ else if and $half (eq (add $full 1) .) }}☆{{ else }}✩{{ end }}
+          {{ end }} ({{ printf "%.1f" $r }})
+        {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+{{ end }}

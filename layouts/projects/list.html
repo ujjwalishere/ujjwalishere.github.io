@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main class="content" role="main">
+  <header class="title">
+    <h1>Projects</h1>
+  </header>
+  <div class="projects-intro">{{ .Content }}</div>
+  {{ $pages := .Pages.ByDate.Reverse }}
+  <ul class="projects-list">
+    {{ range $pages }}
+      <li class="project-item">
+        <div class="project-heading">
+          <a class="project-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.status }}<span class="project-status status-{{ . | urlize }}">{{ . }}</span>{{ end }}
+        </div>
+        {{ with .Params.summary }}<p class="project-summary">{{ . }}</p>{{ end }}
+        <div class="project-meta">
+          {{ with .Params.tech }}
+            <span class="project-tech-label">Tech:</span>
+            <span class="project-tech">{{ delimit . ", " }}</span>
+          {{ end }}
+          {{ with .Params.repo }} | <a class="project-link" href="{{ . }}" target="_blank" rel="noopener">repo</a>{{ end }}
+          {{ with .Params.link }} | <a class="project-link" href="{{ . }}" target="_blank" rel="noopener">live</a>{{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

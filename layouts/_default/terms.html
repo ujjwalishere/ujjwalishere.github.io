@@ -1,0 +1,14 @@
+{{/* Override global taxonomy terms; for tags redirect to /writings. We must place define at top-level. */}}
+{{ define "main" }}
+  {{ if eq .Data.Singular "tag" }}
+    <meta http-equiv="refresh" content="0; url=/writings" />
+    <p>Redirecting to <a href="/writings">writings</a>…</p>
+  {{ else }}
+    <h1>{{ .Title }}</h1>
+    <ul>
+      {{ range .Data.Terms.Alphabetical }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

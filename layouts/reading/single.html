@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="content reading-entry">
+  <header class="title">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.author }}<p class="meta">by {{ . }}</p>{{ end }}
+  </header>
+  <section class="body">
+    {{ .Content }}
+  </section>
+  <footer class="book-details">
+    <h2 class="book-details-heading">Book Details</h2>
+    <table class="book-details-table">
+      <tbody>
+        <tr><th scope="row">Title</th><td>{{ .Title }}</td></tr>
+        {{ with .Params.author }}<tr><th scope="row">Author</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.isbn13 }}<tr><th scope="row">ISBN-13</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.published }}<tr><th scope="row">Date Published</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.publisher }}<tr><th scope="row">Publisher</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.started }}<tr><th scope="row">Started</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.finished }}<tr><th scope="row">Finished</th><td>{{ . }}</td></tr>{{ end }}
+        {{ with .Params.rating }}<tr><th scope="row">Rating</th><td>{{ . }}</td></tr>{{ end }}
+      </tbody>
+    </table>
+  </footer>
+</article>
+{{ end }}

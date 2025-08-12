@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>Tag: {{ .Data.Term }}</h1>
+<p><a href="/writings">← Back to all writings</a></p>
+<ul class="posts">
+  {{ range .Pages }}
+    <li class="post">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="meta">{{ dateFormat ":date_medium" .Date }}</span>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

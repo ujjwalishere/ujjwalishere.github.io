@@ -3,12 +3,20 @@
 		<a href="{{ absURL "/" }}">{{ .Site.Title }}</a>
 	</div>
 	<nav>
+		{{ $rss := "" }}
 		{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
+			{{ if eq (lower .Name) "rss" }}
+				{{ $rss = .URL }}
+			{{ else }}
+				<a href="{{ .URL }}">{{ .Name }}</a>
+			{{ end }}
 		{{ end }}
 		{{ if eq .Site.Params.mode "toggle" -}}
-        | <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+			{{ if ne $rss "" }} | <a class="rss-icon" href="{{ $rss }}" title="RSS feed" aria-label="RSS" target="_blank" rel="noopener noreferrer"><i data-feather="rss"></i></a>{{ end }}
+		| <span id="dark-mode-toggle" class="theme-toggle" onclick="toggleTheme()"></span>
 		<script src="{{ absURL "js/themetoggle.js" }}"></script>
+		{{ else }}
+			{{ if ne $rss "" }}<a class="rss-icon" href="{{ $rss }}" title="RSS feed" aria-label="RSS" target="_blank" rel="noopener noreferrer"><i data-feather="rss"></i></a>{{ end }}
 		{{ end }}
 	</nav>
 </header>

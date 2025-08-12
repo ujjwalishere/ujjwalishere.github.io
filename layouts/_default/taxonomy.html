@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ $term := .Data.Term }}
+<h1>Tag: {{ $term }}</h1>
+<p><a href="/writings">← Back to all writings</a></p>
+<ul class="posts">
+  {{/* Only list pages whose Section is writings */}}
+  {{ range where .Pages "Section" "writings" }}
+    <li class="post"><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="meta">{{ dateFormat ":date_medium" .Date }}</span></li>
+  {{ end }}
+</ul>
+{{ end }}

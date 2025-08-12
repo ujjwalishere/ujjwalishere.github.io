@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header.html" . }}
+  <body>
+    <div class="content">
+      {{ partial "head.html" . }}
+      <main class="list">
+  {{/* Optional hero content from root _index.md (only shows if body not empty) */}}
+        {{ with .Content }}
+        <section class="home-hero">
+          {{ . }}
+        </section>
+        <hr class="section-divider">
+        {{ end }}
+
+        <!-- Site subtitle (from params.subtitle) -->
+        <div class="site-description">
+          {{- if isset .Site.Params "subtitle" -}}
+          <p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
+          {{- end -}}
+        </div>
+
+    <hr class="section-divider"> {{/* Divider BEFORE About Me section */}}
+  {{/* Homepage About section from headless bundle: content/homepage/about.md */}}
+        {{ with site.GetPage "homepage" }}
+          {{ with .Resources.GetMatch "about.md" }}
+          <section class="about-wrapper">
+            <article class="about">
+              <div class="title">
+                <h1 class="title">{{ .Title }}</h1>
+              </div>
+              <section class="body">
+                {{ .Content }}
+              </section>
+            </article>
+          </section>
+          {{ end }}
+        {{ end }}
+
+  <hr class="section-divider">
+
+        <!-- Recent Posts List (paginated) -->
+        {{ $mainSections := .Site.Params.mainSections | default (slice "posts") }}
+        {{ $pages := where .Site.RegularPages "Type" "in" $mainSections }}
+        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+  <h2 class="home-section-title">Recent Writings</h2>
+        <ul class="posts writings-list">
+        {{ range $paginator.Pages }}
+          <li class="post writing-item">
+            <a class="writing-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="writing-date">{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span>{{ end }}</span>
+          </li>
+        {{ end }}
+        </ul>
+        {{ template "partials/paginator.html" . }}
+
+        {{/* Recent Reading Section */}}
+        {{ with site.GetPage "section" "reading" }}
+        {{ $readingPages := .Pages }}
+        {{/* Sort primarily by finished date (desc), fallback to started */}}
+        {{ $byFinished := sort $readingPages ".Params.finished" "desc" }}
+        {{ $sorted := sort $byFinished ".Params.started" "desc" }}
+  {{ if gt (len $sorted) 0 }}
+  <hr class="section-divider"> {{/* Divider BEFORE Recent Reading section */}}
+  <h2 class="home-section-title">Recent Reading</h2>
+        <ul class="posts writings-list">
+          {{ range first 5 $sorted }}
+          <li class="post writing-item">
+            <a class="writing-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="writing-date">
+              {{ with .Params.finished }}{{ . }}{{ else }}{{ with .Params.started }}{{ . }}{{ end }}{{ end }}
+              {{ with .Params.rating }}
+                {{ $r := . }}
+                {{ $full := math.Floor $r }}
+                {{ $half := ge (sub $r $full) 0.5 }}
+                <span class="rating-stars" title="Rating: {{ printf "%.1f" $r }} / 5">
+                  {{ range seq 1 5 }}
+                    {{ if le . $full }}★
+                    {{ else if and $half (eq (add $full 1) .) }}☆
+                    {{ else }}✩
+                    {{ end }}
+                  {{ end }}
+                </span>
+              {{ end }}
+            </span>
+          </li>
+          {{ end }}
+    </ul>
+  <hr class="section-divider"> {{/* Divider AFTER Recent Reading section */}}
+  {{ end }}
+        {{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>
