@@ -67,6 +67,7 @@ https://human-settlement.emergency.copernicus.eu/
 
 http://bhoonidhi.nrsc.gov.in/
 
+https://corona.cast.uark.edu/ -- Corona satellite data
 
 https://www.hydrosheds.org/
 https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/home
