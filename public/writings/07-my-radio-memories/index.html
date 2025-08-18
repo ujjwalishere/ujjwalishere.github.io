@@ -80,7 +80,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -147,14 +147,20 @@
 <p>My first challenge was to figure out which wire goes where and that proved to be the most daunting task. I figured out the transistor model and then after a lot of google searches and research I found the schematics of it. It took some time to figure out what each component of the board does. It took me a few days to tweak connections and play with solder then one day I actually made it work. It was all static, no sound, no music or anything. I totally forgot about the antenna, I took a aluminum wire and used it as an antenna; and here we are, my radio was working. I was able to tune to like 4-5 channels, at night I got few more. I was so happy and for few days I only listened to it, my mom was thinking I had gone mad, but people do not realize that satisfaction.</p>
 <p>Although I did not manage to close it properly because the external tuner knob and the tuner inside had this complicated pully-spring kind of system and some parts of it were missing. Then I got busy with all the other stuff, and it again went catching dust somewhere. I had some plans to build my own radio from scratch someday.</p>
 <p>I recently got interested in radio again because I got tired of listening to the same kind of music. I realized that radio used to give you exposure to new and random music taste but now I am stuck in my own filter bubble. Whether I use Spotify, YouTube, whatever they are all same algorithms. It trapped me in my own music bubble, and I am tired of it. I wanted something new, something surprising and then I tuned to the radio.</p>
-<p>Recently I am playing around with an app called <a href="https://radio.garden/"><em>RadioGarden</em></a>, although I have used it before but I am again gone back to using it. You get a map of a lot of radio stations around the world as little-little dots and then you can just play around. I found it so cool, not only do you find something new, but you also get to know what people are listening to around the world.</p>
+<p>Recently I am playing around with an app called <a href="https://radio.garden/" target="_blank" rel="noopener noreferrer"><em>RadioGarden</em></a>
+, although I have used it before but I am again gone back to using it. You get a map of a lot of radio stations around the world as little-little dots and then you can just play around. I found it so cool, not only do you find something new, but you also get to know what people are listening to around the world.</p>
 <p>I found this channel called <em>Ujala Radio</em> which is an Amsterdam, and I am addicted to it (<em>not because it bear resemblance to my name</em>). First, I was surprised by a Hindi channel in Amsterdam until I realized there are many around the world. I looked for places in US, Canada because I knew that a lot of Indians live there, and I found more. I like radio garden, although sometimes ads are annoying but If I had money, I might have paid for it as well, but it does not interrupt your music like Spotify does. It also has a very beautiful website as well.</p>
 <p>Here are some of the channels I am listening to these days:</p>
-<p><a href="https://radio.garden/listen/ujala/sCFHyXDN">Ujala Radio</a>         <em>Amsterdam, Netherlands</em></p>
-<p><a href="https://radio.garden/listen/radio-sbs/HASfWUI8">Radio SBS</a>           <em>Utrecht, Netherlands</em></p>
-<p><a href="https://radio.garden/listen/sangeet-radio-fm-95-1/3UYywf2B">Sangeet Radio</a>    <em>Houston, US</em></p>
-<p><a href="https://radio.garden/listen/radio-zindagi-am-540/zDDJjS8Z">Radio Zindagi</a>     <em>Edison, US</em></p>
-<p><a href="https://radio.garden/listen/radio-privet/AAtNsdFf">Radio Privet</a>        <em>Nytva, Russia</em></p>
+<p><a href="https://radio.garden/listen/ujala/sCFHyXDN" target="_blank" rel="noopener noreferrer">Ujala Radio</a>
+         <em>Amsterdam, Netherlands</em></p>
+<p><a href="https://radio.garden/listen/radio-sbs/HASfWUI8" target="_blank" rel="noopener noreferrer">Radio SBS</a>
+           <em>Utrecht, Netherlands</em></p>
+<p><a href="https://radio.garden/listen/sangeet-radio-fm-95-1/3UYywf2B" target="_blank" rel="noopener noreferrer">Sangeet Radio</a>
+    <em>Houston, US</em></p>
+<p><a href="https://radio.garden/listen/radio-zindagi-am-540/zDDJjS8Z" target="_blank" rel="noopener noreferrer">Radio Zindagi</a>
+     <em>Edison, US</em></p>
+<p><a href="https://radio.garden/listen/radio-privet/AAtNsdFf" target="_blank" rel="noopener noreferrer">Radio Privet</a>
+        <em>Nytva, Russia</em></p>
 <p>It is not just <em>RadioGarden</em>; I am also playing with the local radio on my smartphone, but you need more patience for that because you can’t be moving around.</p>
 
 		</section>
@@ -188,5 +194,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>

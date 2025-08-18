@@ -78,7 +78,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -144,17 +144,31 @@
 <p>I can not say I am something or the other because I feel like i am not good at anything. Sometimes I code, write poetry, play volleyball, click some beautiful pictures, just explore some random topic like &ldquo;Matrioshka brain or Ligo&rdquo;. I like opening things up and looking up what inside them or repairing broken old things.</p>
 <p>I thrive on exploring real world challenges and solving them by things I learn in classroom. I try to learn new things and explore world without the presumption of achieving something from that knowledge. I think this is what me makes me human.</p>
 <p>I hope this place will give you a little peek into my world and hopefully you will learn more about some new things.</p>
+<h1 id="contact">Contact</h1>
 <p>If you have any question or anything, just drop me an e-mail.
-: <strong><a href="mailto:contact@ujjwalnagar.com">contact@ujjwalnagar.com</a></strong></p>
+: <strong><a href="mailto:contact@ujjwalnagar.com">contact@ujjwalnagar.com</a>
+</strong></p>
+<p>I prefer not using social media, but you can find me here:</p>
 <ul>
-<li><a href="https://www.instagram.com/ujjwalnagar08/">Instagram</a></li>
-<li><a href="https://stackoverflow.com/users/28903257/ujjwal">Stackoverflow</a></li>
-<li><a href="https://github.com/ujjwalishere">Github</a></li>
-<li><a href="https://www.reddit.com/user/ujjwalishere/">Reddit</a></li>
-<li><a href="https://www.linkedin.com/in/ujjwal-nagar-india/">Linkedin</a></li>
-<li><a href="https://bsky.app/profile/ujjwalnagar.bsky.social">Bluesky</a></li>
+<li><a href="https://www.instagram.com/ujjwalnagar08/" target="_blank" rel="noopener noreferrer">Instagram</a>
+</li>
+<li><a href="https://stackoverflow.com/users/28903257/ujjwal" target="_blank" rel="noopener noreferrer">Stackoverflow</a>
+</li>
+<li><a href="https://github.com/ujjwalishere" target="_blank" rel="noopener noreferrer">Github</a>
+</li>
+<li><a href="https://www.reddit.com/user/ujjwalishere/" target="_blank" rel="noopener noreferrer">Reddit</a>
+</li>
+<li><a href="https://www.linkedin.com/in/ujjwal-nagar-india/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+</li>
+<li><a href="https://bsky.app/profile/ujjwalnagar.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+</li>
 </ul>
-<p>I use Hugo for this website. It is built on archie which is a fork of Ezhil&rsquo;s theme built by <a href="https://github.com/athul/archie">Athul</a> licensed under MIT License. All the credits go to him, I have customized it a bit to suit my needs.</p>
+<h1 id="colophon">Colophon</h1>
+<p>I use Hugo for this website. It is based on <a href="https://github.com/athul/archie" target="_blank" rel="noopener noreferrer">Archie</a>
+ theme licensed under MIT License.</p>
+<p>I do not use any trackers or ads on this website. All the content is written by me and no LLM&rsquo;s were involved in Research and writing. All the images, photos and drawings are my own work unless I&rsquo;ve mentioned it myself.</p>
+<p>If you are a bot and is here to scrape the content, I have some message for you <a href="https://www.ujjwalnagar.com/robots.txt">here</a>
+. I am sure you are smart enough to understand it, right?</p>
 
 		</section>
 
@@ -177,5 +191,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>

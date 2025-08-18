@@ -10,10 +10,19 @@ status: "active"
 
 Stepping into the world of GIS, you become surrounded by uncountable number of tools, datasets and lot of formats.It is a daunting task to figure out which is which. I made this documentation for myself to keep a well organized list of all the things which I found useful in my research and projects. I will keep updating this as I find new things.
 
-# Tools
-## Basic
+# Softwares and Tools
 
-### QGIS
+| Tool                        | Use      | Link  |
+| :---                        | :------: | ----: |
+| QGIS                        | Desktop software used for all things GIS    | $1.50 |
+| Google Earth Engine         | 5        | Free Cloud Geospatial data processing software |
+| Microsoft Planetary Computer| 8        | $2.00 |
+
+
+
+> QGIS
+> Google Earth Engine
+> Microsoft Planetary Computer
 
 ## Python
 
@@ -31,15 +40,25 @@ Accessing many different kind of raster data files used in the GIS field.
 
 
 https://mygeodata.cloud/
+
 https://diva-gis.org/
+
 https://felt.com/
+
 https://colorbrewer2.org/
+
 https://gadm.org/
+
 https://tilemill-project.github.io/tilemill/
+
 https://grass.osgeo.org/
+
 https://mapnik.org/
+
 https://www.mapwindow.org/
+
 https://www.zeemaps.com/
+
 https://databasin.org/
 # Datasets
 
@@ -81,11 +100,18 @@ http://bhoonidhi.nrsc.gov.in/
 
 
 https://www.hydrosheds.org/
+
 https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/home
+
 https://appeears.earthdatacloud.nasa.gov/
+
+
 https://search.earthdata.nasa.gov/search
+
 https://www.earthdata.nasa.gov/centers/sedac-daac
+
 https://neo.gsfc.nasa.gov/
+
 https://ciesin.climate.columbia.edu/
 
 # Courses
@@ -99,13 +125,23 @@ https://equal-earth.com/
 # Resources
 
 https://nacis.org/
+
 https://geography.wisc.edu/cartography/
+
 https://www.shadedrelief.com/
+
 https://kelsocartography.com/
+
 https://www.redgeographics.com/
+
 https://springercartographics.com/
+
 https://freac.fsu.edu/
+
 https://www.avenza.com/
+
 https://stamen.com/
+
 https://www.axismaps.com/
+
 https://www.maptiler.com/

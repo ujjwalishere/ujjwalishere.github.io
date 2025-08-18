@@ -1,0 +1,6 @@
+{{- /* Custom render hook to add target _blank to external links */ -}}
+{{- $dest := .Destination -}}
+{{- $isRemote := or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://") -}}
+{{- $base := .Page.Site.BaseURL | strings.TrimRight "/" -}}
+{{- $isExternal := and $isRemote (not (strings.HasPrefix $dest $base)) -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

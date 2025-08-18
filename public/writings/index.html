@@ -77,7 +77,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -146,11 +146,15 @@
   
     
     
-  <a class="tag" href="/tags/opinion/" title="4 writings">#opinion (4)</a>
+  <a class="tag" href="/tags/opinion/" title="5 writings">#opinion (5)</a>
   
     
     
   <a class="tag" href="/tags/poetry/" title="2 writings">#poetry (2)</a>
+  
+    
+    
+  <a class="tag" href="/tags/recently/" title="1 writings">#recently (1)</a>
   
     
     
@@ -161,6 +165,11 @@
 
 
 <ul class="posts writings-list">
+  
+    <li class="post writing-item">
+      <a class="writing-title" href="/writings/new_post/">Recently</a>
+      <span class="writing-date">Aug 18, 2025</span>
+    </li>
   
     <li class="post writing-item">
       <a class="writing-title" href="/writings/11-monthly-tape-mix---june-25/">Monthly Tape Mix - June 2025</a>
@@ -232,5 +241,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>

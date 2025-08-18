@@ -1,0 +1,20 @@
+<script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) { /* ignore */ }
+    });
+  });
+})();
+</script>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "header.html" . -}}
+  <body>
+    <div class="content">
+      {{- partial "head.html" . -}}
+      {{- block "main" . }}{{- end }}
+      {{- partial "footer.html" . -}}
+    </div>
+    {{/* Inject external links enhancer (safeguard in case render hook missed something) */}}
+    {{ partial "external-links-script.html" . }}
+  </body>
+</html>

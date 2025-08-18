@@ -81,7 +81,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -143,7 +143,8 @@
 
 		<section class="body">
 			<p>Well, I was not particularly obsessed with my name, it’s just that I was curious about finding out how domain works. I have seen a lot of people doing their own thing on their website and I liked that idea. Your domain and website are something you own. I want to own my presence on the internet and here we are –</p>
-<p><a href="https://www.ujjwalnagar.com">www.ujjwalnagar.com</a></p>
+<p><a href="https://www.ujjwalnagar.com">www.ujjwalnagar.com</a>
+</p>
 <p>When I started, I thought it will be an easy task to buy a domain; Trust me it turned out to be more daunting than I thought. It took me almost two weeks, just to buy a domain. There are a ton of companies, we all have seen their constant stream of ads on YouTube
 , websites etc. but if you start to investigate what they offer, you’ll get to know how murky this domain market is. You will find a lot of companies offering free domain, but when you see the checkout page, it says that you must buy for 3 years and the first year is free, scam it is “no?”.</p>
 <p>Yearly price and renewal price are the first thing to look for, how much is their renewal price? And if there are conditions for it. Some of them don’t even let you buy a single year plan, most of the time it is bundled with hosting plans.</p>
@@ -155,7 +156,8 @@
 <p>The first thing I did was to do Whois lookup on famous sites, which registrar they are using, then I did a lot of research on registrars on what they are offering, read a lot of reviews on reddit about different registrars. All this research led to Cloudflare; I was really surprised to know that you can buy domain from Cloudflare. I have used Cloudflare only for their DNS, but most people will remember Cloudflare for their “I am not robot” or website security verification banner that comes before you load a website. I found Cloudflare good, their documentation and everything was very clear and there was no colorful message to deceive you. Most of the domain costs around $10.5 which is cheap when you compare to other registrars and renewal is also constant for every successive year. Apart from this they also give you SSL and privacy redaction.</p>
 <p>All this seemed good but when I tried to purchase, I ran into payment issues. First it does not support Rupay card, only international cards are supported and PayPal. I’ve tried 4-5 credit, debit card everything nothing worked. I’ve raised a ticket no one replied. I asked in their community forum and on Discord server, one person replied but that was not helpful at all and then everyone stopped replying. After trying for 1 week every day, I decided to move on from Cloudflare. Later they emailed me all these issues are because of new RBI policies.</p>
 <p>Then I moved to Porkbun, they are the only second registrar I found that provides SSL and privacy. I tried to register through Porkbun but that also failed. So, they have this thing where you must scan your ID and take a selfie to get verified, it is all automated. It got rejected. I asked their support team they sent me another link to verify; again failed. I was really frustrated and at this point I wanted to drop my plan. This last time I wrote to them and Walla, they just directly approved my Id. After that it only took max 15 mins to purchase my domain. They use Stripe as their payment processor which works well and the funny part is Porkbun itself uses Cloudflare DNS. You also get email forwarding for your domain. So, my new email address will be:</p>
-<p><a href="mailto:contact@ujjwalnagar.com">contact@ujjwalnagar.com</a></p>
+<p><a href="mailto:contact@ujjwalnagar.com">contact@ujjwalnagar.com</a>
+</p>
 <p>I’ll later talk about how I point it to my website, how I am hosting it, CNAME records etc.</p>
 
 		</section>
@@ -191,5 +193,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>

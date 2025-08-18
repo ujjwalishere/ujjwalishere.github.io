@@ -80,7 +80,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -142,7 +142,8 @@
 
 		<section class="body">
 			<p><img src="/images/kurt.jpg" alt="Kurt Vonnegut"></p>
-<p>As I am writing this post on December 24, 2024, there are around 110 conflicts going on around the world as per <a href="https://geneva-academy.ch/galleries/today-s-armed-conflicts">Geneva Academy</a>. This is not new; humans have always used violence to settle their disputes and disagreement but the kind of world we live in can be lethal for humanity. We have two major wars going on right now, the war in Ukraine and the Israel-Palestine conflict and then are many civil wars like one in Sudan which has claimed countless lives and inflicted endless suffering. Now we have our politician&rsquo;s glorification of war from the politicians of all sides, I do not know if they are lying, or they truly believe that. I think it is time to pause for a second and think what are we doing.</p>
+<p>As I am writing this post on December 24, 2024, there are around 110 conflicts going on around the world as per <a href="https://geneva-academy.ch/galleries/today-s-armed-conflicts" target="_blank" rel="noopener noreferrer">Geneva Academy</a>
+. This is not new; humans have always used violence to settle their disputes and disagreement but the kind of world we live in can be lethal for humanity. We have two major wars going on right now, the war in Ukraine and the Israel-Palestine conflict and then are many civil wars like one in Sudan which has claimed countless lives and inflicted endless suffering. Now we have our politician&rsquo;s glorification of war from the politicians of all sides, I do not know if they are lying, or they truly believe that. I think it is time to pause for a second and think what are we doing.</p>
 <p>People before us has warned countless time but we seemed to be living in an age of ignorance. One of such great authors was Kurt Vonnegut, who himself served in World War 2, was taken as POW and held in an underground slaughterhouse when the city of Dresden was bombed to ground. He has written a lot of novels, short-stories, plays and non-fiction. In the last two weeks I happen to read one of his famous book which has quite an interesting name.</p>
 <p><strong>&ldquo;Slaughterhouse-Five, or, The Children&rsquo;s Crusade: A Duty-Dance with Death&rdquo;</strong></p>
 <p>This is a fictional book where the main character &ldquo;Billy Pilgrim&rdquo; has been kidnapped by aliens to be shown into their museum. These aliens are the being of fifth dimension, which means they can look into the future and also in past, they can basically look at the whole time in a single moment. Their philosophy was whatever happened happened and whatever will happen will happen, we should not worry about it and cherish the moment. Because he was being taken by these aliens, now he can also look into the future and the past. Over the course of story, he keeps travelling to one time or the other and always knowing what is going to happen next.</p>
@@ -182,5 +183,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>

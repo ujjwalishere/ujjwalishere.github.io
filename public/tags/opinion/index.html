@@ -75,7 +75,7 @@
 	
 </head>
 <body>
-        <div class="content"><header>
+    <div class="content"><header>
 	<div class="main">
 		<a href="https://www.ujjwalnagar.com/">Ujjwal Nagar</a>
 	</div>
@@ -131,6 +131,8 @@
 <ul class="posts">
   
   
+    <li class="post"><a href="/writings/new_post/">Recently</a> <span class="meta">Aug 18, 2025</span></li>
+  
     <li class="post"><a href="/writings/09--why-looking-at-stars-made-earth-more-important/">Why looking at stars made Earth more important</a> <span class="meta">May 27, 2025</span></li>
   
     <li class="post"><a href="/writings/07-my-radio-memories/">My Radio memories</a> <span class="meta">Apr 12, 2025</span></li>
@@ -154,5 +156,27 @@
 <script>
   feather.replace()
 </script></div>
-    </body>
+    
+    <script>
+(function() {
+  const currentHost = location.host;
+  const selector = 'a[href^="http://"],a[href^="https://"]';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(selector).forEach(a => {
+      try {
+        const url = new URL(a.href);
+        if (url.host !== currentHost) {
+          a.setAttribute('target', '_blank');
+          const existingRel = a.getAttribute('rel') || '';
+          const needed = ['noopener','noreferrer'];
+            const finalRel = new Set((existingRel.split(/\s+/).filter(Boolean)).concat(needed));
+            a.setAttribute('rel', Array.from(finalRel).join(' '));
+        }
+      } catch(e) {   }
+    });
+  });
+})();
+</script>
+
+  </body>
 </html>
