@@ -1,0 +1,65 @@
+{{ define "main" }}
+<main class="music-page">
+  <h1 class="title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="intro">{{ . }}</div>{{ end }}
+  {{ $pages := .Pages.ByDate.Reverse }}
+  {{ if gt (len $pages) 0 }}
+    <hr class="dot-sep">
+  {{ end }}
+  {{ range $i, $p := $pages }}
+    <article class="music-post">
+      <header>
+        <h2 class="title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+        <p class="date">{{ $p.Date | time.Format ":date_medium" }}</p>
+      </header>
+      <section>
+        {{/* Build labels by scanning post body for lines like: "# 1 Song - Artist" */}}
+        {{ $labels := slice }}
+        {{ $lines := split $p.RawContent "\n" }}
+        {{ range $lines }}
+          {{ $t := trim . " " }}
+          {{ if gt (len (findRE "^#{1,6}\\s*[0-9]+\\.?\\s+.+$" $t)) 0 }}
+            {{ $lab := replaceRE "^#{1,6}\\s*([0-9]+)\\.?\\s+(.+)$" "$1. $2" $t }}
+            {{ $labels = $labels | append $lab }}
+          {{ end }}
+        {{ end }}
+
+        {{ $ids := $p.Params.videos }}
+        {{ if not $ids }}
+          {{/* Fallback: parse IDs from content (shortcodes and links) */}}
+          {{ $ids = slice }}
+          {{ $raw := $p.RawContent }}
+          {{ range (findRE `(?m){{<\s*youtube\s+([a-zA-Z0-9_-]{6,})\s*>}}` $raw) }}
+            {{ $id := replaceRE `(?m){{<\s*youtube\s+([a-zA-Z0-9_-]{6,})\s*>}}` `$1` . }}
+            {{ if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end }}
+          {{ end }}
+          {{ range (findRE `(?m)https?://(?:www\.)?youtu(?:\.be/|be\.com/(?:watch\?v=|embed/))([a-zA-Z0-9_-]{6,})` $raw) }}
+            {{ $id := replaceRE `(?m).*youtu(?:\.be/|be\.com/(?:watch\?v=|embed/))([a-zA-Z0-9_-]{6,}).*` `$1` . }}
+            {{ if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $ids) 0 }}
+          <div class="video-collage">
+            {{ range $j, $id := $ids }}
+              <div class="video-item">
+                <div class="yt-lite" data-id="{{ $id }}"></div>
+                {{ $label := "" }}
+                {{ if lt $j (len $labels) }}{{ $label = index $labels $j }}{{ end }}
+                {{ with $label }}<div class="video-caption">{{ . }}</div>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ else }}
+          {{ $p.Summary }}
+        {{ end }}
+      </section>
+    </article>
+    {{ if lt (add $i 1) (len $pages) }}
+      <hr class="post-sep">
+    {{ end }}
+  {{ end }}
+</main>
+{{/* Include the lite loader script */}}
+<script src="/js/music-lite.js" defer></script>
+{{ end }}

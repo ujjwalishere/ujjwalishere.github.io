@@ -1,0 +1,54 @@
+{{ define "main" }}
+<main class="music-page">
+  <article>
+    <header>
+      <h1 class="title">{{ .Title }}</h1>
+      <p class="date">{{ .Date | time.Format ":date_medium" }}</p>
+      {{ with .Params.description }}<p class="desc">{{ . }}</p>{{ end }}
+    </header>
+    <section class="body">
+      {{/* First try to render an array of video IDs from front matter: videos: ["YOUTUBE_ID", ...] */}}
+      {{/* Collect IDs from front matter or fall back to parsing content */}}
+      {{ $ids := .Params.videos }}
+      {{ if not $ids }}
+        {{ $ids = slice }}
+        {{ $raw := .RawContent }}
+        {{ range (findRE `(?m){{<\s*youtube\s+([a-zA-Z0-9_-]{6,})\s*>}}` $raw) }}
+          {{ $id := replaceRE `(?m){{<\s*youtube\s+([a-zA-Z0-9_-]{6,})\s*>}}` `$1` . }}
+          {{ if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end }}
+        {{ end }}
+        {{ range (findRE `(?m)https?://(?:www\.)?youtu(?:\.be/|be\.com/(?:watch\?v=|embed/))([a-zA-Z0-9_-]{6,})` $raw) }}
+          {{ $id := replaceRE `(?m).*youtu(?:\.be/|be\.com/(?:watch\?v=|embed/))([a-zA-Z0-9_-]{6,}).*` `$1` . }}
+          {{ if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if gt (len $ids) 0 }}
+        {{/* Build labels by scanning body for numbered headings */}}
+        {{ $labels := slice }}
+        {{ $lines := split $.RawContent "\n" }}
+        {{ range $lines }}
+          {{ $t := trim . " " }}
+          {{ if gt (len (findRE "^#{1,6}\\s*[0-9]+\\.?\\s+.+$" $t)) 0 }}
+            {{ $lab := replaceRE "^#{1,6}\\s*([0-9]+)\\.?\\s+(.+)$" "$1. $2" $t }}
+            {{ $labels = $labels | append $lab }}
+          {{ end }}
+        {{ end }}
+        <div class="video-collage">
+          {{ range $i, $id := $ids }}
+            <div class="video-item">
+              <div class="yt-lite" data-id="{{ $id }}"></div>
+              {{ $label := "" }}
+              {{ if lt $i (len $labels) }}{{ $label = index $labels $i }}{{ end }}
+              {{ with $label }}<div class="video-caption">{{ . }}</div>{{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
+    </section>
+  </article>
+</main>
+<script src="/js/music-lite.js" defer></script>
+{{ end }}

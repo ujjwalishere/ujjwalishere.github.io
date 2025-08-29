@@ -1,55 +1,43 @@
 {{ define "main" }}
+	{{/* Proxy to the section-specific list template for music */}}
+	{{ $ctx := . }}
+	{{ with site.GetPage "/music" }}
+		{{ template "music-list-proxy" (dict "Section" . "Ctx" $ctx) }}
+	{{ end }}
+{{ end }}
+
+{{ define "music-list-proxy" }}
 <main class="music-page">
-  <article>
-    <div class="title">
-      <h1 class="title">{{ .Title }}</h1>
-      {{ with .Description }}<div class="meta">{{ . }}</div>{{ end }}
-    </div>
-    <section class="body">
-      {{/* We'll parse the raw content to build grouped video sections. */}}
-      {{ $raw := .RawContent }}
-      {{ $lines := split $raw "\n" }}
-      {{ $currentHeading := "" }}
-      {{ $videos := slice }}
-      {{ range $i, $l := $lines }}
-        {{ $trim := trim $l " " }}
-        {{ if hasPrefix $trim "## " }}
-          {{/* If we have accumulated videos for previous heading, render them */}}
-          {{ if and (ne $currentHeading "") (gt (len $videos) 0) }}
-            <h2 id="{{ anchorize $currentHeading }}">{{ $currentHeading }}</h2>
-            <div class="video-collage">
-              {{ range $videos }}
-                <div class="video-item">
-                  <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/{{ . }}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                  </div>
-                </div>
-              {{ end }}
-            </div>
-          {{ end }}
-          {{/* Reset for new heading */}}
-          {{ $currentHeading = (replace $trim "## " "") }}
-          {{ $videos = slice }}
-        {{ else if hasPrefix $trim "youtube:" }}
-          {{ $id := replace $trim "youtube:" "" }}
-          {{ $videos = $videos | append $id }}
-        {{ end }}
-      {{ end }}
-      {{/* Render last group */}}
-      {{ if and (ne $currentHeading "") (gt (len $videos) 0) }}
-        <h2 id="{{ anchorize $currentHeading }}">{{ $currentHeading }}</h2>
-        <div class="video-collage">
-          {{ range $videos }}
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/{{ . }}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-              </div>
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-      <noscript>Please enable JavaScript to view the video collage.</noscript>
-    </section>
-  </article>
+	<h1 class="title">{{ .Section.Title }}</h1>
+	{{ with .Section.Content }}<div class="intro">{{ . }}</div>{{ end }}
+	{{ $pages := .Section.Pages.ByDate.Reverse }}
+	{{ if gt (len $pages) 0 }}
+		<hr class="dot-sep">
+	{{ end }}
+	{{ range $i, $p := $pages }}
+		<article class="music-post">
+			<header>
+				<h2 class="title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+				<p class="date">{{ $p.Date | time.Format ":date_medium" }}</p>
+			</header>
+			<section>
+			{{ with $p.Params.videos }}
+					<div class="video-collage">
+						{{ range . }}
+							<div class="video-item">
+				<div class="yt-lite" data-id="{{ . }}"></div>
+							</div>
+						{{ end }}
+					</div>
+				{{ else }}
+					{{ $p.Summary }}
+				{{ end }}
+			</section>
+		</article>
+		{{ if lt (add $i 1) (len $pages) }}
+			<hr class="post-sep">
+		{{ end }}
+	{{ end }}
 </main>
+<script src="/js/music-lite.js" defer></script>
 {{ end }}
