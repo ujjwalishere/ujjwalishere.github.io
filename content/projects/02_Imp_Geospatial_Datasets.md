@@ -1,5 +1,5 @@
 ---
-Title: "Important Geospatial Datasets"
+Title: "My Geospatial Toolbox"
 date: 2025-08-11
 summary: "A collection of useful geospatial datasets "
 tech: ["GIS"]
@@ -8,35 +8,63 @@ link: "https://example.com"
 status: "active"
 ---
 
-Stepping into the world of GIS, you become surrounded by uncountable number of tools, datasets and lot of formats.It is a daunting task to figure out which is which. I made this documentation for myself to keep a well organized list of all the things which I found useful in my research and projects. I will keep updating this as I find new things.
+This will be an an ever updating list, as I explore new datasets, processing tools and techniques. It is based on what I found useful in my research and projects not a comprehensive list.
 
-# Softwares and Tools
+> I do not include proprietary and commercial stuff here but there are a lot out there, some of them quite good.
+
+# General Processing
 
 | Tool                        | Use      | Link  |
 | :---                        | :------: | ----: |
-| QGIS                        | Desktop software used for all things GIS    | $1.50 |
-| Google Earth Engine         | 5        | Free Cloud Geospatial data processing software |
-| Microsoft Planetary Computer| 8        | $2.00 |
+| QGIS                        | Desktop software used for all things GIS    | [gis.org](https://qgis.org/)|
+| Google Earth Engine         | Free Cloud platoform for geospatial analysis    | https://earthengine.google.com/|
+| Microsoft Planetary Computer| Another free cloud platform  | https://planetarycomputer.microsoft.com/ |
+|SNAP | For working with Sentinel Data | https://step.esa.int/main/download/snap-download/ |
+| GDAL | Although included in almost every tool, but can be used in cmd | https://gdal.org |
+
+
+# Python and GeoProcessing
+
+| Library                      | Use      | How to install  |
+| :---                         | :------: | ----: |
+| [Rasterio](https://github.com/rasterio/rasterio) | Reading and Manipulating rasters | `pip install rasterio` |
+
+
+# Javascript Processing
+
+# Cartography
+
+| Library                      | Use      | Link |
+| :---                         | :------: | ----: |
+| Color Brewer | Generating color palettee | https://colorbrewer2.org/ |
 
 
 
-> QGIS
-> Google Earth Engine
-> Microsoft Planetary Computer
+# Data Sources
 
-## Python
 
-## Javascript
+## Shapes, Boundaries and Elevation
 
-## Processing
+### [GADM](https://gadm.org/)
 
-### GDAL
-software used to acces, read, write almost all types of raster and vector files.
-### Rasterio
-Accessing many different kind of raster data files used in the GIS field.
-### Google Earth Engine
-### Microsoft Planetary Computer
-### Google Earth
+   Useful for getting boudaries for countries, and their subdivisions. Subdivision can vary depending on country.
+
+### [Indian Boundaries](https://onlinemaps.surveyofindia.gov.in/Digital_Product_Show.aspx)
+
+   If working on a project in India, use these official boundaries provided by the survey of India. Scroll to Administrative boundaries 
+   and you will find boundaries for district level, taluk level, village level etc. Boundaries are free but other datasets are chargeable.
+
+### [GeoBoundaries](https://www.geoboundaries.org/)
+
+   Database of political and Administrative boundaries around the globe. Very easy to download, simplified files are also available.
+
+### [GAUL](https://data.apps.fao.org/catalog/organization/administrative-boundaries-fao)
+
+Provided by the Food and Agriculture organisation *FAO* of the United Nations. It is sourced from various UN agencies and government organisations etc and then combined together. Learn more about it from [here](https://openknowledge.fao.org/items/aebf0333-a0e3-4177-9d4a-bb2472d0367e)
+
+### [Natural Earth](https://www.naturalearthdata.com/)
+
+Useful for making maps, endorsed by North American Cartographic Information Society (NACIS).
 
 
 https://mygeodata.cloud/
@@ -45,7 +73,6 @@ https://diva-gis.org/
 
 https://felt.com/
 
-https://colorbrewer2.org/
 
 https://gadm.org/
 
@@ -71,22 +98,6 @@ https://step.esa.int/main/
 
 https://leafletjs.com/
 
-
-## Vector Boundaries 
-
-#### Natural Earth
-
-Land boundaries: Made with Natural Earth. Free vector and raster map data
-
-Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.
-
-https://www.naturalearthdata.com/
-
-#### GAUL
-
-#### GeoBoundaries
-
-https://www.geoboundaries.org/index.html
 
 ## CHIRPS
 
@@ -145,3 +156,8 @@ https://stamen.com/
 https://www.axismaps.com/
 
 https://www.maptiler.com/
+
+# Other Aggregated Sources
+
+* [Columbia Library](https://guides.library.columbia.edu/geotools/home, "List of tools and dataset, aggregated by columbia library")  
+* [Brandeis Library](https://guides.library.brandeis.edu/c.php?g=990410&p=7164687 "Aggregated list from Brandeis Library")

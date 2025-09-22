@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Important Geospatial Datasets - Ujjwal Nagar</title><link rel="icon" type="image/png" href=/favicon.svg /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My Geospatial Toolbox - Ujjwal Nagar</title><link rel="icon" type="image/png" href=/favicon.svg /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A collection of useful geospatial datasets" />
 	
 	<meta name="robots" content="index,follow" />
@@ -13,7 +13,7 @@
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content="http://localhost:1313/projects/02_imp_geospatial_datasets/">
   <meta property="og:site_name" content="Ujjwal Nagar">
-  <meta property="og:title" content="Important Geospatial Datasets">
+  <meta property="og:title" content="My Geospatial Toolbox">
   <meta property="og:description" content="A collection of useful geospatial datasets">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -22,7 +22,7 @@
     <meta property="article:modified_time" content="2025-08-11T00:00:00+00:00">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Important Geospatial Datasets">
+  <meta name="twitter:title" content="My Geospatial Toolbox">
   <meta name="twitter:description" content="A collection of useful geospatial datasets">
 <script src="http://localhost:1313/js/feather.min.js"></script>
 	
@@ -132,7 +132,7 @@
 <main>
 	<article>
 		<div class="title">
-			<h1 class="title">Important Geospatial Datasets</h1>
+			<h1 class="title">My Geospatial Toolbox</h1>
 			<div class="meta">Posted on Aug 11, 2025</div>
 		</div>
 		
@@ -140,8 +140,10 @@
 		
 
 		<section class="body">
-			<p>Stepping into the world of GIS, you become surrounded by uncountable number of tools, datasets and lot of formats.It is a daunting task to figure out which is which. I made this documentation for myself to keep a well organized list of all the things which I found useful in my research and projects. I will keep updating this as I find new things.</p>
-<h1 id="softwares-and-tools">Softwares and Tools</h1>
+			<p>This will be an an ever updating list, as I explore new datasets, processing tools and techniques. It is based on what I found useful in my research and projects not a comprehensive list.</p>
+<blockquote>
+<p>I do not include proprietary and commercial stuff here but there are a lot out there, some of them quite good.</p></blockquote>
+<h1 id="general-processing">General Processing</h1>
 <table>
   <thead>
       <tr>
@@ -154,41 +156,96 @@
       <tr>
           <td style="text-align: left">QGIS</td>
           <td style="text-align: center">Desktop software used for all things GIS</td>
-          <td style="text-align: right">$1.50</td>
+          <td style="text-align: right"><a href="https://qgis.org/" target="_blank" rel="noopener noreferrer">gis.org</a>
+</td>
       </tr>
       <tr>
           <td style="text-align: left">Google Earth Engine</td>
-          <td style="text-align: center">5</td>
-          <td style="text-align: right">Free Cloud Geospatial data processing software</td>
+          <td style="text-align: center">Free Cloud platoform for geospatial analysis</td>
+          <td style="text-align: right"><a href="https://earthengine.google.com/" target="_blank" rel="noopener noreferrer">https://earthengine.google.com/</a>
+</td>
       </tr>
       <tr>
           <td style="text-align: left">Microsoft Planetary Computer</td>
-          <td style="text-align: center">8</td>
-          <td style="text-align: right">$2.00</td>
+          <td style="text-align: center">Another free cloud platform</td>
+          <td style="text-align: right"><a href="https://planetarycomputer.microsoft.com/" target="_blank" rel="noopener noreferrer">https://planetarycomputer.microsoft.com/</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">SNAP</td>
+          <td style="text-align: center">For working with Sentinel Data</td>
+          <td style="text-align: right"><a href="https://step.esa.int/main/download/snap-download/" target="_blank" rel="noopener noreferrer">https://step.esa.int/main/download/snap-download/</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">GDAL</td>
+          <td style="text-align: center">Although included in almost every tool, but can be used in cmd</td>
+          <td style="text-align: right"><a href="https://gdal.org" target="_blank" rel="noopener noreferrer">https://gdal.org</a>
+</td>
       </tr>
   </tbody>
 </table>
-<blockquote>
-<p>QGIS
-Google Earth Engine
-Microsoft Planetary Computer</p></blockquote>
-<h2 id="python">Python</h2>
-<h2 id="javascript">Javascript</h2>
-<h2 id="processing">Processing</h2>
-<h3 id="gdal">GDAL</h3>
-<p>software used to acces, read, write almost all types of raster and vector files.</p>
-<h3 id="rasterio">Rasterio</h3>
-<p>Accessing many different kind of raster data files used in the GIS field.</p>
-<h3 id="google-earth-engine">Google Earth Engine</h3>
-<h3 id="microsoft-planetary-computer">Microsoft Planetary Computer</h3>
-<h3 id="google-earth">Google Earth</h3>
+<h1 id="python-and-geoprocessing">Python and GeoProcessing</h1>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Library</th>
+          <th style="text-align: center">Use</th>
+          <th style="text-align: right">How to install</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://github.com/rasterio/rasterio" target="_blank" rel="noopener noreferrer">Rasterio</a>
+</td>
+          <td style="text-align: center">Reading and Manipulating rasters</td>
+          <td style="text-align: right"><code>pip install rasterio</code></td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="javascript-processing">Javascript Processing</h1>
+<h1 id="cartography">Cartography</h1>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Library</th>
+          <th style="text-align: center">Use</th>
+          <th style="text-align: right">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Color Brewer</td>
+          <td style="text-align: center">Generating color palettee</td>
+          <td style="text-align: right"><a href="https://colorbrewer2.org/" target="_blank" rel="noopener noreferrer">https://colorbrewer2.org/</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="data-sources">Data Sources</h1>
+<h2 id="shapes-boundaries-and-elevation">Shapes, Boundaries and Elevation</h2>
+<h3 id="gadm"><a href="https://gadm.org/" target="_blank" rel="noopener noreferrer">GADM</a>
+</h3>
+<p>Useful for getting boudaries for countries, and their subdivisions. Subdivision can vary depending on country.</p>
+<h3 id="indian-boundaries"><a href="https://onlinemaps.surveyofindia.gov.in/Digital_Product_Show.aspx" target="_blank" rel="noopener noreferrer">Indian Boundaries</a>
+</h3>
+<p>If working on a project in India, use these official boundaries provided by the survey of India. Scroll to Administrative boundaries
+and you will find boundaries for district level, taluk level, village level etc. Boundaries are free but other datasets are chargeable.</p>
+<h3 id="geoboundaries"><a href="https://www.geoboundaries.org/" target="_blank" rel="noopener noreferrer">GeoBoundaries</a>
+</h3>
+<p>Database of political and Administrative boundaries around the globe. Very easy to download, simplified files are also available.</p>
+<h3 id="gaul"><a href="https://data.apps.fao.org/catalog/organization/administrative-boundaries-fao" target="_blank" rel="noopener noreferrer">GAUL</a>
+</h3>
+<p>Provided by the Food and Agriculture organisation <em>FAO</em> of the United Nations. It is sourced from various UN agencies and government organisations etc and then combined together. Learn more about it from <a href="https://openknowledge.fao.org/items/aebf0333-a0e3-4177-9d4a-bb2472d0367e" target="_blank" rel="noopener noreferrer">here</a>
+</p>
+<h3 id="natural-earth"><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a>
+</h3>
+<p>Useful for making maps, endorsed by North American Cartographic Information Society (NACIS).</p>
 <p><a href="https://mygeodata.cloud/" target="_blank" rel="noopener noreferrer">https://mygeodata.cloud/</a>
 </p>
 <p><a href="https://diva-gis.org/" target="_blank" rel="noopener noreferrer">https://diva-gis.org/</a>
 </p>
 <p><a href="https://felt.com/" target="_blank" rel="noopener noreferrer">https://felt.com/</a>
-</p>
-<p><a href="https://colorbrewer2.org/" target="_blank" rel="noopener noreferrer">https://colorbrewer2.org/</a>
 </p>
 <p><a href="https://gadm.org/" target="_blank" rel="noopener noreferrer">https://gadm.org/</a>
 </p>
@@ -212,16 +269,6 @@ EO Browser</p>
 <p><a href="https://step.esa.int/main/" target="_blank" rel="noopener noreferrer">https://step.esa.int/main/</a>
 </p>
 <p><a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">https://leafletjs.com/</a>
-</p>
-<h2 id="vector-boundaries">Vector Boundaries</h2>
-<h4 id="natural-earth">Natural Earth</h4>
-<p>Land boundaries: Made with Natural Earth. Free vector and raster map data</p>
-<p>Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.</p>
-<p><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">https://www.naturalearthdata.com/</a>
-</p>
-<h4 id="gaul">GAUL</h4>
-<h4 id="geoboundaries">GeoBoundaries</h4>
-<p><a href="https://www.geoboundaries.org/index.html" target="_blank" rel="noopener noreferrer">https://www.geoboundaries.org/index.html</a>
 </p>
 <h2 id="chirps">CHIRPS</h2>
 <p><a href="https://www.chc.ucsb.edu/data/chirps" target="_blank" rel="noopener noreferrer">https://www.chc.ucsb.edu/data/chirps</a>
@@ -275,6 +322,13 @@ EO Browser</p>
 </p>
 <p><a href="https://www.maptiler.com/" target="_blank" rel="noopener noreferrer">https://www.maptiler.com/</a>
 </p>
+<h1 id="other-aggregated-sources">Other Aggregated Sources</h1>
+<ul>
+<li><a href="https://guides.library.columbia.edu/geotools/home," title="List of tools and dataset, aggregated by columbia library" target="_blank" rel="noopener noreferrer">Columbia Library</a>
+</li>
+<li><a href="https://guides.library.brandeis.edu/c.php?g=990410&amp;p=7164687" title="Aggregated list from Brandeis Library" target="_blank" rel="noopener noreferrer">Brandeis Library</a>
+</li>
+</ul>
 
 		</section>
 

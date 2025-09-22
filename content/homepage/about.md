@@ -3,10 +3,13 @@ title: "About Me"
 weight: 1
 ---
 
-An undergrad in **Environmental Science & Sustainability** who also explores code, poetry, photography, audio mixes, and repairing / tinkering with old things.
+Currently undergrad in **Environmental Science & Sustainability** but always a curious, tinkering being. Learning how to learn, trying to solve today's problems, and hoping for a better world tomorrow.
 
-This little corner is where I put:
+Here, I share everything, that needs to be known:
 
 - Writing, Readings and about what I’m learning
 - Experiments, projects, and side quests
-- Creative mixes: music, photos, drawings, and more
+- Things that matter to me: drawings, music etc.
+
+
+
