@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creative Corner on Ujjwal Nagar</title>
-    <link>https://www.ujjwalnagar.com/creative-corner/</link>
+    <link>http://localhost:1313/creative-corner/</link>
     <description>Recent content in Creative Corner on Ujjwal Nagar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Ujjwal</copyright>
-    <atom:link href="https://www.ujjwalnagar.com/creative-corner/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/creative-corner/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
