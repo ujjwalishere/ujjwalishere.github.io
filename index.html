@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'">
+    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'">
   <link rel="preload" as="image" href="img_1-640.jpg" type="image/jpeg" fetchpriority="high"
     imagesrcset="img_1-320.jpg 320w, img_1-640.jpg 640w, img_1.jpg 1298w" imagesizes="(max-width: 600px) 100vw, 30vw">
   <style>
@@ -120,6 +120,23 @@
         display: block;
         width: 100% !important;
       }
+
+      .top-nav a {
+        padding: 8px 6px;
+        margin: 2px 2px !important;
+      }
+    }
+
+    .top-nav a {
+      display: inline-block;
+      line-height: 1.25;
+    }
+
+    @media (pointer: coarse) {
+      .top-nav a {
+        padding: 10px 8px;
+        margin: 2px 3px !important;
+      }
     }
   </style>
 </head>
@@ -142,7 +159,7 @@
       <!-- Main Layout Table -->
       <table width="100%" align="center" border="0" cellpadding="20" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td align="center" style="border-bottom: 1px solid #DADADA; padding: 10px 0;">
+        <td class="top-nav" align="center" style="border-bottom: 1px solid #DADADA; padding: 10px 0;">
           <font face="'FiraGO', sans-serif" size="2" style="text-transform: uppercase; letter-spacing: 1px;">
             <a href="#home" style="margin: 0 5px; text-decoration: none; color: black;">Home</a>
             <a href="#research" style="margin: 0 5px; text-decoration: none; color: black;">Research</a>
@@ -167,8 +184,8 @@
                   alt="Professor Photo">
               </td>
               <td class="bio-text" valign="top" width="70%">
-                <h3 style="margin-top: 0; border-top: none; font-size: 16pt; text-transform: none; letter-spacing: 0;">
-                  Welcome</h3>
+                <h2 style="margin-top: 0; border-top: none; font-size: 16pt; text-transform: none; letter-spacing: 0;">
+                  Welcome</h2>
                 <p style="font-size: 1.1em; line-height: 1.6;">
                   I am a undergrad student studying Environmental Science and Sustainability at <a
                     href="https://azimpremjiuniversity.edu.in/" target="_blank">Azim Premji University</a>.
