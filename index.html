@@ -1,24 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <title>Ujjwal Nagar</title>
+  <meta name="description"
+    content="Academic page of Ujjwal Nagar, an Environmental Science and Sustainability undergraduate focused on remote sensing, GIS, and environmental data analytics.">
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'">
+  <link rel="preload" as="image" href="img_1-640.jpg" type="image/jpeg" fetchpriority="high"
+    imagesrcset="img_1-320.jpg 320w, img_1-640.jpg 640w, img_1.jpg 1298w" imagesizes="(max-width: 600px) 100vw, 30vw">
   <style>
     /* Minimal CSS to ensure readability, but relying mostly on HTML tags for structure */
     body {
-      font-family: "Fira Sans", sans-serif;
+      font-family: "FiraGO", Georgia, "Times New Roman", serif;
       background-color: #F7F7F7;
       color: #121212;
       margin: 0;
       padding: 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
     }
 
     .container {
@@ -37,7 +50,7 @@
     }
 
     a:visited {
-      color: #666666;
+      color: #4A4A4A;
       text-decoration: none;
       border-bottom: 1px solid #E2E2E2;
     }
@@ -55,12 +68,12 @@
       margin-top: 0;
       letter-spacing: -1px;
       text-transform: uppercase;
-      font-family: "Fira Sans", serif;
+      font-family: "FiraGO", serif;
     }
 
     h2 {
       font-size: 14pt;
-      color: #666666;
+      color: #444444;
       font-weight: 400;
       text-transform: uppercase;
       margin-top: 0;
@@ -70,7 +83,7 @@
     h3 {
       font-size: 12pt;
       font-weight: 700;
-      border-top: 1px solid #000000;
+      border-top: 1px solid #DADADA;
       padding-top: 5px;
       margin-top: 30px;
       text-transform: uppercase;
@@ -86,13 +99,13 @@
 
     .section-date {
       font-size: 0.8em;
-      color: #888;
+      color: #4A4A4A;
       font-weight: bold;
       text-transform: uppercase;
     }
 
     .code {
-      font-family: "Fira Mono", monospace;
+      font-family: "FiraGO", "Courier New", monospace;
     }
 
     @media (max-width: 600px) {
@@ -111,29 +124,30 @@
   </style>
 </head>
 
-<body bgcolor="#F7F7F7" text="#121212" link="#000000" vlink="#666666" alink="#326891">
+<body bgcolor="#F7F7F7" text="#121212" link="#000000" vlink="#4A4A4A" alink="#326891">
 
   <div class="container">
 
     <center>
       <table width="100%" border="0" cellpadding="10" cellspacing="0">
         <tr>
-          <td align="center" style="border-bottom: 2px solid black; padding-bottom: 5px;">
+          <td align="center" style="border-bottom: 1px solid #DADADA; padding-bottom: 5px;">
             <h1>Ujjwal Nagar</h1>
           </td>
         </tr>
       </table>
     </center>
 
-    <!-- Main Layout Table -->
-    <table width="100%" align="center" border="0" cellpadding="20" cellspacing="0" bgcolor="#FFFFFF">
+    <main>
+      <!-- Main Layout Table -->
+      <table width="100%" align="center" border="0" cellpadding="20" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td align="center" style="border-bottom: 2px solid black; padding: 10px 0;">
-          <font face="'Fira Sans', sans-serif" size="2" style="text-transform: uppercase; letter-spacing: 1px;">
+        <td align="center" style="border-bottom: 1px solid #DADADA; padding: 10px 0;">
+          <font face="'FiraGO', sans-serif" size="2" style="text-transform: uppercase; letter-spacing: 1px;">
             <a href="#home" style="margin: 0 5px; text-decoration: none; color: black;">Home</a>
             <a href="#research" style="margin: 0 5px; text-decoration: none; color: black;">Research</a>
             <a href="#pubs" style="margin: 0 5px; text-decoration: none; color: black;">Publications</a>
-            <a href="https://blog.ujjwalnagar.com" target="_blank" rel="noopener noreferrer" style="margin: 0 5px; text-decoration: none; color: black;">Blog</a>
+            <a href="#blog" style="margin: 0 5px; text-decoration: none; color: black;">Blog</a>
             <a href="#updates" style="margin: 0 5px; text-decoration: none; color: black;">Updates</a>
             <a href="#contact" style="margin: 0 5px; text-decoration: none; color: black;">Contact</a>
 
@@ -147,7 +161,10 @@
           <table border="0" width="100%" cellspacing="0" cellpadding="0">
             <tr>
               <td class="bio-img" valign="top" width="30%" align="center" style="padding-right: 20px;">
-                <img src="img_1.jpg" width="100%" alt="Professor Photo">
+                <img class="hero-photo" src="img_1-640.jpg" srcset="img_1-320.jpg 320w, img_1-640.jpg 640w, img_1.jpg 1298w"
+                  sizes="(max-width: 600px) 100vw, 30vw" width="1298" height="1298"
+                  loading="eager" fetchpriority="high" decoding="async"
+                  alt="Professor Photo">
               </td>
               <td class="bio-text" valign="top" width="70%">
                 <h3 style="margin-top: 0; border-top: none; font-size: 16pt; text-transform: none; letter-spacing: 0;">
@@ -243,11 +260,12 @@
 
         </td>
       </tr>
-    </table>
+      </table>
+    </main>
 
     <br>
     <center>
-      <font size="-1" color="#888">
+      <font size="-1" color="#4A4A4A">
         &copy;Ujjwal Nagar. 2026<br>
         <br>
     </center>
